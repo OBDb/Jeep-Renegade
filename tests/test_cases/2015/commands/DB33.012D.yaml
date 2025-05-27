@@ -1,0 +1,23 @@
+command_id: DB33.012D
+test_cases:
+- response: 18DAF11003412D6900000000
+  expected_values:
+    EGR_ERR: -17.96875
+- response: 18DAF11003412D7400000000
+  expected_values:
+    EGR_ERR: -9.375
+- response: 18DAF11003412D7500000000
+  expected_values:
+    EGR_ERR: -8.59375
+- response: 18DAF11003412D7D00000000
+  expected_values:
+    EGR_ERR: -2.34375
+- response: 18DAF11003412D8000000000
+  expected_values:
+    EGR_ERR: 0
+- response: 18DAF11003412D8100000000
+  expected_values:
+    EGR_ERR: 0.78125
+- response: 18DAF11003412D8500000000
+  expected_values:
+    EGR_ERR: 3.90625
