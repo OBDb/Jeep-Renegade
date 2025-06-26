@@ -1,20 +1,20 @@
 command_id: DB33.014C
 test_cases:
-- response: 18DAF11003414C0C00000000
-  expected_values:
+- expected_values:
     TAC_PCT: 4.70588
-- response: 18DAF11003414C8C00000000
-  expected_values:
+  response: 18DAF11003414C0C00000000
+- expected_values:
     TAC_PCT: 54.90196
-- response: 18DAF11003414CD400000000
-  expected_values:
+  response: 18DAF11003414C8C00000000
+- expected_values:
     TAC_PCT: 83.13725
-- response: 18DAF11003414CD600000000
-  expected_values:
+  response: 18DAF11003414CD400000000
+- expected_values:
     TAC_PCT: 83.92157
-- response: 18DAF11003414CDA00000000
-  expected_values:
+  response: 18DAF11003414CD600000000
+- expected_values:
     TAC_PCT: 85.4902
-- response: 18DAF11003414CDB00000000
-  expected_values:
+  response: 18DAF11003414CDA00000000
+- expected_values:
     TAC_PCT: 85.88235
+  response: 18DAF11003414CDB00000000
