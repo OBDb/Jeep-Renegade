@@ -7,6 +7,9 @@ test_cases:
     IAT: 26
   response: 18DAF11003410F4200000000
 - expected_values:
+    IAT: 29
+  response: 18DAF11003410F4500000000
+- expected_values:
     IAT: 32
   response: 18DAF11003410F4800000000
 - expected_values:

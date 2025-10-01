@@ -4,6 +4,9 @@ test_cases:
     EGR_ERR: -17.96875
   response: 18DAF11003412D6900000000
 - expected_values:
+    EGR_ERR: -14.0625
+  response: 18DAF11003412D6E00000000
+- expected_values:
     EGR_ERR: -9.375
   response: 18DAF11003412D7400000000
 - expected_values:
