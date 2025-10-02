@@ -11,6 +11,11 @@ test_cases:
     010D1
     18DAF11003410D00
 - expected_values:
+    VSS: 52
+  response: |-
+    010D1
+    18DAF11003410D34
+- expected_values:
     VSS: 0
   response: 18DAF11003410D00
 - expected_values:
