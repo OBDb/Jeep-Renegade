@@ -9,5 +9,12 @@ test_cases:
     VSS: 0
   response: 18DAF11003410D0000000000
 - expected_values:
+    VSS: 47
+  response: |-
+    18DAF11003410D2F00000000
+
+
+    ELM327 v2.1
+- expected_values:
     VSS: 129
   response: 18DAF11003410D8100000000
