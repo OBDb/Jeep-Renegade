@@ -1,0 +1,7 @@
+command_id: DAC7.C7.220124
+test_cases:
+- expected_values:
+    JEEP_TID_FR: 35336
+  response: |-
+    18DAF1C7100862012400008A
+    18DAF1C7210820012400008A
