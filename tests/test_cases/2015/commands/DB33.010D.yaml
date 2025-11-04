@@ -2,6 +2,9 @@ command_id: DB33.010D
 test_cases:
 - expected_values:
     VSS: 0
+  response: 18DAF11003410D00
+- expected_values:
+    VSS: 0
   response: |-
     18DAF11003410D00
     18DAF11803410D00
@@ -15,6 +18,9 @@ test_cases:
 
 
     ELM327 v2.1
+- expected_values:
+    VSS: 96
+  response: 18DAF11003410D60
 - expected_values:
     VSS: 129
   response: 18DAF11003410D8100000000
