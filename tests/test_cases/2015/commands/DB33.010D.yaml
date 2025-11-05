@@ -19,8 +19,8 @@ test_cases:
 
     ELM327 v2.1
 - expected_values:
-    VSS: 96
-  response: 18DAF11003410D60
+    VSS: 128
+  response: 18DAF11003410D80
 - expected_values:
     VSS: 129
   response: 18DAF11003410D8100000000
