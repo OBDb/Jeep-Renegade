@@ -11,6 +11,11 @@ test_cases:
     012F1
     18DAF11003412F87
 - expected_values:
+    FLI: 63.92157
+  response: |-
+    012F1
+    18DAF11003412FA3
+- expected_values:
     FLI: 67.84314
   response: |-
     012F1
