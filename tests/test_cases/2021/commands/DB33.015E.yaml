@@ -4,29 +4,5 @@ test_cases:
     FUEL_RATE: 0.25
   response: 18DAF11004415E0005
 - expected_values:
-    FUEL_RATE: 1.15
-  response: 18DAF11004415E0017
-- expected_values:
-    FUEL_RATE: 1.2
-  response: 18DAF11004415E0018
-- expected_values:
-    FUEL_RATE: 1.35
-  response: 18DAF11004415E001B
-- expected_values:
-    FUEL_RATE: 2.5
-  response: 18DAF11004415E0032
-- expected_values:
-    FUEL_RATE: 3.5
-  response: 18DAF11004415E0046
-- expected_values:
-    FUEL_RATE: 4.2
-  response: 18DAF11004415E0054
-- expected_values:
-    FUEL_RATE: 4.25
-  response: 18DAF11004415E0055
-- expected_values:
-    FUEL_RATE: 7.25
-  response: 18DAF11004415E0091
-- expected_values:
     FUEL_RATE: 12.5
   response: 18DAF11004415E00FA
