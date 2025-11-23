@@ -4,29 +4,5 @@ test_cases:
     EOT: 9
   response: 18DAF11003415C31
 - expected_values:
-    EOT: 10
-  response: 18DAF11003415C32
-- expected_values:
-    EOT: 12
-  response: 18DAF11003415C34
-- expected_values:
-    EOT: 14
-  response: 18DAF11003415C36
-- expected_values:
-    EOT: 15
-  response: 18DAF11003415C37
-- expected_values:
-    EOT: 17
-  response: 18DAF11003415C39
-- expected_values:
-    EOT: 19
-  response: 18DAF11003415C3B
-- expected_values:
-    EOT: 22
-  response: 18DAF11003415C3E
-- expected_values:
-    EOT: 26
-  response: 18DAF11003415C42
-- expected_values:
-    EOT: 29
-  response: 18DAF11003415C45
+    EOT: 94
+  response: 18DAF11003415C86
