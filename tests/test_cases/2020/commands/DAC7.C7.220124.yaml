@@ -16,15 +16,15 @@ test_cases:
     18DAF1C71008620124000069
     18DAF1C721A7A00124000069
 - expected_values:
-    JEEP_TID_FR: 29128
-  response: |-
-    18DAF1C71008620124000071
-    18DAF1C721C8A20124000071
-- expected_values:
     JEEP_TID_FR: 31208
   response: |-
     18DAF1C71008620124000079
     18DAF1C721E8A20124000079
+- expected_values:
+    JEEP_TID_FR: 31241
+  response: |-
+    18DAF1C7100862012400007A
+    18DAF1C7210926012400007A
 - expected_values:
     JEEP_TID_FR: 33288
   response: |-
