@@ -1,6 +1,16 @@
 command_id: DAC7.C7.220124
 test_cases:
 - expected_values:
+    JEEP_TID_FR: 29127
+  response: |-
+    18DAF1C71008620124000071
+    18DAF1C721C7A00124000071
+- expected_values:
+    JEEP_TID_FR: 31175
+  response: |-
+    18DAF1C71008620124000079
+    18DAF1C721C79C0124000079
+- expected_values:
     JEEP_TID_FR: 33256
   response: |-
     18DAF1C71008620124000081
@@ -20,3 +30,13 @@ test_cases:
   response: |-
     18DAF1C71008620124000089
     18DAF1C721E8A00124000089
+- expected_values:
+    JEEP_TID_FR: 291239
+  response: |-
+    18DAF1C71008620124000471
+    18DAF1C721A79C0124000471
+- expected_values:
+    JEEP_TID_FR: 293320
+  response: |-
+    18DAF1C71008620124000479
+    18DAF1C721C81E0124000479
