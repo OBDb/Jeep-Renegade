@@ -11,8 +11,8 @@ test_cases:
     015C1
     18DAF11003415C4F
 - expected_values:
-    EOT: 3
-  response: 18DAF11003415C2B
+    EOT: 2
+  response: 18DAF11003415C2A
 - expected_values:
     EOT: 95
   response: 18DAF11003415C87
