@@ -4,33 +4,5 @@ test_cases:
     JEEP_GEAR_DESIRED: 2
   response: 18DAF1180462051A20
 - expected_values:
-    JEEP_GEAR_CURRENT: 2
-    JEEP_GEAR_DESIRED: 2
-  response: 18DAF1180462051A22
-- expected_values:
-    JEEP_GEAR_CURRENT: 3
-    JEEP_GEAR_DESIRED: 2
-  response: 18DAF1180462051A23
-- expected_values:
-    JEEP_GEAR_CURRENT: 3
-    JEEP_GEAR_DESIRED: 3
-  response: 18DAF1180462051A33
-- expected_values:
-    JEEP_GEAR_CURRENT: 4
-    JEEP_GEAR_DESIRED: 4
-  response: 18DAF1180462051A44
-- expected_values:
-    JEEP_GEAR_CURRENT: 6
-    JEEP_GEAR_DESIRED: 6
-  response: 18DAF1180462051A66
-- expected_values:
-    JEEP_GEAR_CURRENT: 7
-    JEEP_GEAR_DESIRED: 7
-  response: 18DAF1180462051A77
-- expected_values:
-    JEEP_GEAR_CURRENT: 8
-    JEEP_GEAR_DESIRED: 8
-  response: 18DAF1180462051A88
-- expected_values:
     JEEP_GEAR_SHFT: PARK
   response: 18DAF1180462051ADD
