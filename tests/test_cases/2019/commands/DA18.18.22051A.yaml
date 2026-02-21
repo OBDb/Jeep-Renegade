@@ -4,5 +4,5 @@ test_cases:
     JEEP_GEAR_DESIRED: 2
   response: 18DAF1180462051A20
 - expected_values:
-    JEEP_GEAR_SHFT: PARK
-  response: 18DAF1180462051ADD
+    JEEP_GEAR_SHFT: REVERSE
+  response: 18DAF1180462051AEE
