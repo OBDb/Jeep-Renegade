@@ -11,6 +11,11 @@ test_cases:
     18DAF110034104E0
     18DAF118034104E2
 - expected_values:
+    LOAD_PCT: 90.19608
+  response: |-
+    18DAF110034104EB
+    18DAF118034104E6
+- expected_values:
     LOAD_PCT: 0
   response: |-
     18DAF11803410400
