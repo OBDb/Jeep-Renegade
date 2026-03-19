@@ -95,17 +95,17 @@
   "signals": [
     {"id": "RENEGADE_RPM_ECU", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "revolutionsPerMinute" }, "name": "Engine RPM (ECU direct)"}
   ]},
-{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1002"}, "freq": 1, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1002"}, "freq": 30, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_VSS_ECU", "path": "Vehicle", "fmt": { "len": 16, "max": 300, "div": 124, "unit": "kilometersPerHour" }, "name": "Vehicle speed (ECU direct)"}
+    {"id": "RENEGADE_ENGINE_STATUS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Engine operational status"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1003"}, "freq": 5, "dbgfilter": { "years": [2019] },
   "signals": [
     {"id": "RENEGADE_ECT_ECU", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Coolant temperature (ECU direct)"}
   ]},
-{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1009"}, "freq": 30, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1009"}, "freq": 3600, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_RUNTIME_ECU", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "minutes" }, "name": "Time since engine start"}
+    {"id": "RENEGADE_WATER_FUEL_DIST", "path": "Diagnostics", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance with water in fuel warning"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1900"}, "freq": 5, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -117,7 +117,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "195A"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 3, "min": -1, "add": -33.768, "div": 1000, "unit": "bar" }, "name": "Turbo boost pressure"}
+    {"id": "RENEGADE_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 3, "min": -1, "add": -32.768, "div": 1000, "unit": "bar" }, "name": "Turbo boost pressure"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "189F"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -153,11 +153,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "189B"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_EGR_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "min": -100, "add": -32767, "mul": 100, "div": 32767, "unit": "percent" }, "name": "EGR valve commanded"}
-  ]},
-{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "189C"}, "freq": 2, "dbgfilter": { "years": [2019] },
-  "signals": [
-    {"id": "RENEGADE_EGR_ACT", "path": "Engine", "fmt": { "len": 16, "max": 100, "min": -100, "add": -32767, "mul": 100, "div": 32767, "unit": "percent" }, "name": "EGR valve actual"}
+    {"id": "RENEGADE_SWIRL_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "min": -100, "add": -327.68, "div": 100, "unit": "percent" }, "name": "Swirl actuator command"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "194F"}, "freq": 30, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -171,9 +167,9 @@
   "signals": [
     {"id": "RENEGADE_BATT_V_ECU", "path": "Vehicle", "fmt": { "len": 16, "max": 20, "mul": 5, "div": 10000, "unit": "volts" }, "name": "Battery voltage (ECU)"}
   ]},
-{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "190B"}, "freq": 30, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "190B"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_GLOW_PLUG", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Glow plug command"}
+    {"id": "RENEGADE_VSS_ECU", "path": "Vehicle", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Vehicle speed (ECM)"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "192D"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
