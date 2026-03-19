@@ -1,4 +1,149 @@
 { "commands": [
 
+{ "hdr": "DB33", "cmd": {"01": "04"}, "freq": 1,
+  "signals": [
+    {"id": "LOAD_PCT", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Calculated engine load"}
+  ]},
+{ "hdr": "DB33", "cmd": {"01": "05"}, "freq": 5,
+  "signals": [
+    {"id": "ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "0B"}, "freq": 1,
+  "signals": [
+    {"id": "MAP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascals" }, "name": "Intake manifold absolute pressure"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "0C"}, "freq": 1,
+  "signals": [
+    {"id": "RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "revolutionsPerMinute" }, "name": "Engine RPM"}
+  ]},
+{ "hdr": "DB33", "cmd": {"01": "0D"}, "freq": 1,
+  "signals": [
+    {"id": "VSS", "path": "Vehicle", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "0F"}, "freq": 5,
+  "signals": [
+    {"id": "IAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature"}
+  ]},
+{ "hdr": "DB33", "cmd": {"01": "10"}, "freq": 1,
+  "signals": [
+    {"id": "MAF", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "gramsPerSecond" }, "name": "Mass air flow rate"}
+  ]},
+{ "hdr": "DB33", "cmd": {"01": "1C"}, "freq": 86400,
+  "signals": [
+    {"id": "OBDSUP", "path": "Details", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "OBD standards compliance"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "1F"}, "freq": 30,
+  "signals": [
+    {"id": "RUNT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Engine run time since start"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "21"}, "freq": 60,
+  "signals": [
+    {"id": "MIL_DIST", "path": "Diagnostics", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled with MIL on"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "23"}, "freq": 1,
+  "signals": [
+    {"id": "FRP", "path": "Engine", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kilopascals" }, "name": "Fuel rail gauge pressure (diesel)"}
+  ]},
+{ "hdr": "DB33", "cmd": {"01": "2F"}, "freq": 30,
+  "signals": [
+    {"id": "FLI", "path": "Vehicle", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel tank level input"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "30"}, "freq": 86400,
+  "signals": [
+    {"id": "WARM_UPS", "path": "Diagnostics", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Warm-ups since codes cleared"}
+  ]},
+{ "hdr": "DB33", "cmd": {"01": "31"}, "freq": 60,
+  "signals": [
+    {"id": "CLR_DIST", "path": "Diagnostics", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled since codes cleared"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "33"}, "freq": 60,
+  "signals": [
+    {"id": "BARO", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascals" }, "name": "Barometric pressure"}
+  ]},
+{ "hdr": "DB33", "cmd": {"01": "34"}, "freq": 2,
+  "signals": [
+    {"id": "LAMBDA11_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 2, "div": 32768, "unit": "scalar" }, "name": "O2 sensor 1 bank 1 lambda"},
+    {"id": "O2S11_CURRENT", "path": "Emissions", "fmt": { "bix": 16, "len": 16, "max": 128, "min": -128, "div": 256, "add": -128, "unit": "milliamps" }, "name": "O2 sensor 1 bank 1 current"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "42"}, "freq": 30,
+  "signals": [
+    {"id": "VPWR", "path": "Vehicle", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Control module voltage"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "45"}, "freq": 1,
+  "signals": [
+    {"id": "TP_R", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Relative throttle position"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "49"}, "freq": 1,
+  "signals": [
+    {"id": "APP_D", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position D"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "4A"}, "freq": 1,
+  "signals": [
+    {"id": "APP_E", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position E"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "4C"}, "freq": 1,
+  "signals": [
+    {"id": "TAC_PCT", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Commanded throttle actuator"}
+  ]},
+{ "hdr": "DB33", "dbg": true, "cmd": {"01": "7C"}, "freq": 5,
+  "signals": [
+    {"id": "RENEGADE_DPF_TEMP1", "path": "Emissions", "fmt": { "bix": 8, "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF temperature bank 1 sensor 1"},
+    {"id": "RENEGADE_DPF_TEMP2", "path": "Emissions", "fmt": { "bix": 24, "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF temperature bank 1 sensor 2"}
+  ]},
+
+{ "hdr": "DA00", "rax": "00", "dbg": true, "cmd": {"22": "0504"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_CATALYST_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst inlet temperature"}
+  ]},
+{ "hdr": "DA00", "rax": "00", "dbg": true, "cmd": {"22": "118E"}, "freq": 2, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_FUEL_CORR_CYL1", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 1"}
+  ]},
+{ "hdr": "DA00", "rax": "00", "dbg": true, "cmd": {"22": "118F"}, "freq": 2, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_FUEL_CORR_CYL2", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 2"}
+  ]},
+{ "hdr": "DA00", "rax": "00", "dbg": true, "cmd": {"22": "1190"}, "freq": 2, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_FUEL_CORR_CYL3", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 3"}
+  ]},
+{ "hdr": "DA00", "rax": "00", "dbg": true, "cmd": {"22": "1191"}, "freq": 2, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_FUEL_CORR_CYL4", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 4"}
+  ]},
+{ "hdr": "DA00", "rax": "00", "fcm1": true, "dbg": true, "cmd": {"22": "A0A1"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_DPF_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF inlet temperature (UDS)"}
+  ]},
+{ "hdr": "DA00", "rax": "00", "fcm1": true, "dbg": true, "cmd": {"22": "A0A5"}, "freq": 30, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_DPF_DIST_SINCE_REGEN", "path": "Emissions", "fmt": { "len": 16, "max": 2000, "unit": "kilometers" }, "name": "Distance since last DPF regeneration"}
+  ]},
+{ "hdr": "DA00", "rax": "00", "fcm1": true, "dbg": true, "cmd": {"22": "A0F1"}, "freq": 60, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_DPF_AVG_REGEN_DURATION", "path": "Emissions", "fmt": { "len": 16, "max": 1800, "unit": "seconds" }, "name": "Average DPF regeneration duration"}
+  ]},
+{ "hdr": "DA00", "rax": "00", "fcm1": true, "dbg": true, "cmd": {"22": "A0F2"}, "freq": 60, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_DPF_AVG_DIST_BETWEEN_REGENS", "path": "Emissions", "fmt": { "len": 16, "max": 2000, "unit": "kilometers" }, "name": "Average distance between DPF regenerations"}
+  ]},
+{ "hdr": "DA00", "rax": "00", "fcm1": true, "dbg": true, "cmd": {"22": "A0F3"}, "freq": 60, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_DPF_AVG_REGEN_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Average DPF temperature during regeneration"}
+  ]},
+
+{ "hdr": "DA18", "rax": "18", "cmd": {"22": "051A"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_GEAR_DESIRED", "path": "Transmission", "fmt": {          "len": 4, "max": 15, "nullmin": 0, "nullmax": 13, "unit": "scalar" }, "name": "Desired gear"},
+    {"id": "RENEGADE_GEAR_CURRENT", "path": "Transmission", "fmt": {"bix": 4, "len": 4, "max": 15, "nullmin": 0, "nullmax": 13, "unit": "scalar" }, "name": "Current gear"}
+  ]},
+{ "hdr": "DA18", "rax": "18", "cmd": {"22": "2024"}, "freq": 86400, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_TIRE_SIZE", "path": "Tires", "fmt": {"bix": 64, "len": 16, "max": 65535, "unit": "millimeters" }, "name": "Tire size"}
+  ]},
+{ "hdr": "DA18", "rax": "18", "cmd": {"22": "F158"}, "freq": 86400, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_MODEL_YEAR", "path": "Details", "fmt": { "len": 8, "max": 225, "add": 2000, "unit": "scalar" }, "name": "Model year"}
+  ]}
 ]
 }
