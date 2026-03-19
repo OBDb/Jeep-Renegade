@@ -91,51 +91,139 @@
     {"id": "RENEGADE_DPF_TEMP2", "path": "Emissions", "fmt": { "bix": 24, "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF temperature bank 1 sensor 2"}
   ]},
 
-{ "hdr": "DA00", "rax": "00", "dbg": true, "cmd": {"22": "0504"}, "freq": 5, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1000"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_CATALYST_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst inlet temperature"}
+    {"id": "RENEGADE_RPM_ECU", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "revolutionsPerMinute" }, "name": "Engine RPM (ECU direct)"}
   ]},
-{ "hdr": "DA00", "rax": "00", "dbg": true, "cmd": {"22": "118E"}, "freq": 2, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1002"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_VSS_ECU", "path": "Vehicle", "fmt": { "len": 16, "max": 300, "div": 124, "unit": "kilometersPerHour" }, "name": "Vehicle speed (ECU direct)"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1003"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_ECT_ECU", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Coolant temperature (ECU direct)"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1009"}, "freq": 30, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_RUNTIME_ECU", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "minutes" }, "name": "Time since engine start"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1900"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_FUEL_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Diesel fuel temperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1935"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_IAT_TURBO", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "IAT post-intercooler"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "195A"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 3, "min": -1, "add": -33.768, "div": 1000, "unit": "bar" }, "name": "Turbo boost pressure"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "189F"}, "freq": 2, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_VGT_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "VGT position commanded"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "18A0"}, "freq": 2, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_VGT_ACT", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "VGT position actual"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1947"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_RAIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 3000, "div": 20, "unit": "bar" }, "name": "Fuel rail pressure measured"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1946"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_RAIL_PRESS_CMD", "path": "Engine", "fmt": { "len": 16, "max": 3000, "div": 20, "unit": "bar" }, "name": "Fuel rail pressure commanded"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "3800"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
     {"id": "RENEGADE_FUEL_CORR_CYL1", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 1"}
   ]},
-{ "hdr": "DA00", "rax": "00", "dbg": true, "cmd": {"22": "118F"}, "freq": 2, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "3801"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
     {"id": "RENEGADE_FUEL_CORR_CYL2", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 2"}
   ]},
-{ "hdr": "DA00", "rax": "00", "dbg": true, "cmd": {"22": "1190"}, "freq": 2, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "3802"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
     {"id": "RENEGADE_FUEL_CORR_CYL3", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 3"}
   ]},
-{ "hdr": "DA00", "rax": "00", "dbg": true, "cmd": {"22": "1191"}, "freq": 2, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "3803"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
     {"id": "RENEGADE_FUEL_CORR_CYL4", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 4"}
   ]},
-{ "hdr": "DA00", "rax": "00", "fcm1": true, "dbg": true, "cmd": {"22": "A0A1"}, "freq": 5, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "189B"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_DPF_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF inlet temperature (UDS)"}
+    {"id": "RENEGADE_EGR_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "min": -100, "add": -32767, "mul": 100, "div": 32767, "unit": "percent" }, "name": "EGR valve commanded"}
   ]},
-{ "hdr": "DA00", "rax": "00", "fcm1": true, "dbg": true, "cmd": {"22": "A0A5"}, "freq": 30, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "189C"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_DPF_DIST_SINCE_REGEN", "path": "Emissions", "fmt": { "len": 16, "max": 2000, "unit": "kilometers" }, "name": "Distance since last DPF regeneration"}
+    {"id": "RENEGADE_EGR_ACT", "path": "Engine", "fmt": { "len": 16, "max": 100, "min": -100, "add": -32767, "mul": 100, "div": 32767, "unit": "percent" }, "name": "EGR valve actual"}
   ]},
-{ "hdr": "DA00", "rax": "00", "fcm1": true, "dbg": true, "cmd": {"22": "A0F1"}, "freq": 60, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "194F"}, "freq": 30, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_DPF_AVG_REGEN_DURATION", "path": "Emissions", "fmt": { "len": 16, "max": 1800, "unit": "seconds" }, "name": "Average DPF regeneration duration"}
+    {"id": "RENEGADE_OIL_PUMP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Variable oil pump position"}
   ]},
-{ "hdr": "DA00", "rax": "00", "fcm1": true, "dbg": true, "cmd": {"22": "A0F2"}, "freq": 60, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "3813"}, "freq": 3600, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_DPF_AVG_DIST_BETWEEN_REGENS", "path": "Emissions", "fmt": { "len": 16, "max": 2000, "unit": "kilometers" }, "name": "Average distance between DPF regenerations"}
+    {"id": "RENEGADE_OIL_DEGRAD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Engine oil degradation"}
   ]},
-{ "hdr": "DA00", "rax": "00", "fcm1": true, "dbg": true, "cmd": {"22": "A0F3"}, "freq": 60, "dbgfilter": { "years": [2019] },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1955"}, "freq": 30, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_DPF_AVG_REGEN_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Average DPF temperature during regeneration"}
+    {"id": "RENEGADE_BATT_V_ECU", "path": "Vehicle", "fmt": { "len": 16, "max": 20, "mul": 5, "div": 10000, "unit": "volts" }, "name": "Battery voltage (ECU)"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "190B"}, "freq": 30, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_GLOW_PLUG", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Glow plug command"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "192D"}, "freq": 1, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_GEAR_ECU", "path": "Transmission", "fmt": { "len": 8, "max": 9, "unit": "scalar" }, "name": "Gear engaged (ECU)"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "18E2"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "bix": 8, "len": 8, "max": 255, "unit": "millibar" }, "name": "DPF differential pressure"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "3915"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_DPF_OUTLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "DPF outlet temperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "18A5"}, "freq": 60, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_REGEN_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "DPF regen interrupted count"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "18EC"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_FORCED_REGEN", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Forced regen state"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "380B"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_REGEN_PROGRESS", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "DPF regen progress"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "fcm1": true, "cmd": {"22": "18DE"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_DPF_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "DPF inlet temperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "fcm1": true, "cmd": {"22": "18E4"}, "freq": 30, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_DPF_SOOT_PCT", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 1000, "div": 65535, "unit": "percent" }, "name": "DPF soot clogging level"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "fcm1": true, "cmd": {"22": "18A4"}, "freq": 3600, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_REGEN_TOTAL", "path": "Emissions", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Total DPF regenerations"}
   ]},
 
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "051A"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_GEAR_DESIRED", "path": "Transmission", "fmt": {          "len": 4, "max": 9, "unit": "scalar" }, "name": "Desired gear"},
+    {"id": "RENEGADE_GEAR_DESIRED", "path": "Transmission", "fmt": { "len": 4, "max": 9, "unit": "scalar" }, "name": "Desired gear"},
     {"id": "RENEGADE_GEAR_CURRENT", "path": "Transmission", "fmt": {"bix": 4, "len": 4, "max": 9, "unit": "scalar" }, "name": "Current gear"}
+  ]},
+{ "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "04FE"}, "freq": 5, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_ATF_TEMP", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
+  ]},
+{ "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "1018"}, "freq": 2, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_TCM_TORQUE", "path": "Transmission", "fmt": { "len": 16, "max": 1000, "add": -500, "unit": "newtonMeters" }, "name": "TCM reported torque"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "fcm1": true, "cmd": {"22": "2024"}, "freq": 86400, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -144,6 +232,11 @@
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "F158"}, "freq": 86400, "dbgfilter": { "years": [2019] },
   "signals": [
     {"id": "RENEGADE_MODEL_YEAR", "path": "Details", "fmt": { "len": 8, "max": 225, "add": 2000, "unit": "scalar" }, "name": "Model year"}
+  ]},
+
+{ "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "1004"}, "freq": 30, "dbgfilter": { "years": [2019] },
+  "signals": [
+    {"id": "RENEGADE_BATT_V_BCM", "path": "Vehicle", "fmt": { "len": 8, "max": 25, "div": 10, "unit": "volts" }, "name": "Battery voltage (BCM)"}
   ]}
 ]
 }
