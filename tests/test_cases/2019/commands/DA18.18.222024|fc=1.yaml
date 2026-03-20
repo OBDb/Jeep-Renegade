@@ -1,4 +1,4 @@
-command_id: DA18.18.222024
+command_id: DA18.18.222024|fc=1
 test_cases:
 - expected_values:
     JEEP_TIRE_SIZE: 4334
