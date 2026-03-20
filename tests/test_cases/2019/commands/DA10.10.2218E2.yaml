@@ -1,5 +1,5 @@
 command_id: DA10.10.2218E2
 test_cases:
 - expected_values:
-    RENEGADE_DPF_DIFF_PRESS: -29490.5
+    RENEGADE_DPF_DIFF_PRESS: 0.7
   response: 18DAF110056218E28007

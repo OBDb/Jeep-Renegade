@@ -177,7 +177,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "18E2"}, "freq": 5, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "len": 16, "max": 50, "min": -50, "add": -32768, "div": 10, "unit": "kilopascal" }, "name": "DPF differential pressure"}
+    {"id": "RENEGADE_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "len": 16, "max": 50, "min": -50, "add": -3276.8, "div": 10, "unit": "kilopascal" }, "name": "DPF differential pressure"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "3915"}, "freq": 5, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -271,7 +271,7 @@
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "1018"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_TCM_TORQUE", "path": "Transmission", "fmt": { "len": 16, "max": 1000, "add": -500, "unit": "newtonMeters" }, "name": "TCM reported torque"}
+    {"id": "RENEGADE_TCM_TORQUE", "path": "Transmission", "fmt": { "len": 16, "max": 1000, "min": -500, "add": -500, "unit": "newtonMeters" }, "name": "TCM reported torque"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "fcm1": true, "cmd": {"22": "2024"}, "freq": 86400, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -279,7 +279,7 @@
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "F158"}, "freq": 86400, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "JEEP_MODEL_YEAR", "path": "Details", "fmt": { "len": 8, "max": 225, "add": 2000, "unit": "scalar" }, "name": "Model year"}
+    {"id": "JEEP_MODEL_YEAR", "path": "Details", "fmt": { "len": 8, "max": 2225, "add": 2000, "unit": "scalar" }, "name": "Model year"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2102"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
