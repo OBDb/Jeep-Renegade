@@ -34,7 +34,7 @@
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "1F"}, "freq": 30,
   "signals": [
-    {"id": "RUNT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Engine run time since start"}
+    {"id": "RUNTM", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Engine run time since start"}
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "21"}, "freq": 60,
   "signals": [
