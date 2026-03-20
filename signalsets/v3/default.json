@@ -1,90 +1,5 @@
 { "commands": [
 
-{ "hdr": "DB33", "cmd": {"01": "04"}, "freq": 1,
-  "signals": [
-    {"id": "LOAD_PCT", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Calculated engine load", "suggestedMetric": "engineLoad"}
-  ]},
-{ "hdr": "DB33", "cmd": {"01": "05"}, "freq": 5,
-  "signals": [
-    {"id": "ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "0B"}, "freq": 1,
-  "signals": [
-    {"id": "MAP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Intake manifold absolute pressure"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "0C"}, "freq": 1,
-  "signals": [
-    {"id": "RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Engine RPM"}
-  ]},
-{ "hdr": "DB33", "cmd": {"01": "0D"}, "freq": 0.25, "dbg": true,
-  "signals": [
-    {"id": "VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "0F"}, "freq": 5,
-  "signals": [
-    {"id": "IAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature"}
-  ]},
-{ "hdr": "DB33", "cmd": {"01": "10"}, "freq": 1,
-  "signals": [
-    {"id": "MAF", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "gramsPerSecond" }, "name": "Mass air flow rate", "suggestedMetric": "massAirFlow"}
-  ]},
-{ "hdr": "DB33", "cmd": {"01": "1C"}, "freq": 86400,
-  "signals": [
-    {"id": "OBDSUP", "path": "Details", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "OBD standards compliance"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "1F"}, "freq": 30,
-  "signals": [
-    {"id": "RUNTM", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Engine run time since start"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "21"}, "freq": 60,
-  "signals": [
-    {"id": "MIL_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled with MIL on"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "23"}, "freq": 1,
-  "signals": [
-    {"id": "FRP", "path": "Engine", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "Fuel rail gauge pressure (diesel)"}
-  ]},
-{ "hdr": "DB33", "cmd": {"01": "2F"}, "freq": 30,
-  "signals": [
-    {"id": "FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel tank level input"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "30"}, "freq": 86400,
-  "signals": [
-    {"id": "WARM_UPS", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Warm-ups since codes cleared"}
-  ]},
-{ "hdr": "DB33", "cmd": {"01": "31"}, "freq": 60,
-  "signals": [
-    {"id": "CLR_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled since codes cleared"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "33"}, "freq": 60,
-  "signals": [
-    {"id": "BARO", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure"}
-  ]},
-{ "hdr": "DB33", "cmd": {"01": "34"}, "freq": 2,
-  "signals": [
-    {"id": "LAMBDA11_CURRENT", "path": "Emissions", "fmt": { "len": 16, "max": 2, "div": 32768, "unit": "scalar" }, "name": "O2 sensor 1 bank 1 lambda"},
-    {"id": "O2S11_CURRENT", "path": "Emissions", "fmt": { "bix": 16, "len": 16, "max": 128, "min": -128, "div": 256, "add": -128, "unit": "milliamps" }, "name": "O2 sensor 1 bank 1 current"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "42"}, "freq": 30,
-  "signals": [
-    {"id": "VPWR", "path": "Electrical", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Control module voltage"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "45"}, "freq": 1,
-  "signals": [
-    {"id": "TP_R", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Relative throttle position"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "49"}, "freq": 1,
-  "signals": [
-    {"id": "APP_D", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position D"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "4A"}, "freq": 1,
-  "signals": [
-    {"id": "APP_E", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal position E"}
-  ]},
-{ "hdr": "DB33", "dbg": true, "cmd": {"01": "4C"}, "freq": 1,
-  "signals": [
-    {"id": "TAC_PCT", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Commanded throttle actuator"}
-  ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "7C"}, "freq": 5,
   "signals": [
     {"id": "RENEGADE_DPF_TEMP1", "path": "Emissions", "fmt": { "bix": 8, "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF temperature bank 1 sensor 1"},
@@ -267,7 +182,7 @@
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "04FE"}, "freq": 5,
   "signals": [
-    {"id": "RENEGADE_ATF_TEMP", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
+    {"id": "JEEP_ATF_T_4THGEN", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "1018"}, "freq": 2,
   "signals": [
