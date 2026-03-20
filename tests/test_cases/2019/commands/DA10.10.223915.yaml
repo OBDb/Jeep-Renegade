@@ -1,0 +1,5 @@
+command_id: DA10.10.223915
+test_cases:
+- expected_values:
+    RENEGADE_DPF_OUTLET_T: 84.26
+  response: 18DAF110056239151845

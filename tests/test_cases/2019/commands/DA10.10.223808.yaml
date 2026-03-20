@@ -1,0 +1,5 @@
+command_id: DA10.10.223808
+test_cases:
+- expected_values:
+    RENEGADE_AVG_REGEN_TEMP: 618.06
+  response: 18DAF110056238088087

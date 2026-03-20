@@ -1,0 +1,5 @@
+command_id: DA10.10.223807
+test_cases:
+- expected_values:
+    RENEGADE_DIST_SINCE_REGEN: 142
+  response: 18DAF1100662380700058C

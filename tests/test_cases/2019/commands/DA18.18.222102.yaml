@@ -1,0 +1,5 @@
+command_id: DA18.18.222102
+test_cases:
+- expected_values:
+    RENEGADE_GEARBOX_RPM: 832
+  response: 18DAF118056221020D00

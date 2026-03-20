@@ -1,0 +1,5 @@
+command_id: DA10.10.223914
+test_cases:
+- expected_values:
+    RENEGADE_CATALYST_INLET_T: 143.36
+  response: 18DAF1100562391423D0

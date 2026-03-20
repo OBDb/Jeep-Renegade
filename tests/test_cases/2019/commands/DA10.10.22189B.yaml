@@ -1,0 +1,5 @@
+command_id: DA10.10.22189B
+test_cases:
+- expected_values:
+    RENEGADE_SWIRL_CMD: 2.06
+  response: 18DAF1100562189B80CE
