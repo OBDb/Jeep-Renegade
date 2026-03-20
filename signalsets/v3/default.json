@@ -10,15 +10,15 @@
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "0B"}, "freq": 1,
   "signals": [
-    {"id": "MAP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascals" }, "name": "Intake manifold absolute pressure"}
+    {"id": "MAP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Intake manifold absolute pressure"}
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "0C"}, "freq": 1,
   "signals": [
-    {"id": "RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "revolutionsPerMinute" }, "name": "Engine RPM"}
+    {"id": "RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Engine RPM"}
   ]},
 { "hdr": "DB33", "cmd": {"01": "0D"}, "freq": 1,
   "signals": [
-    {"id": "VSS", "path": "Vehicle", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed"}
+    {"id": "VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed"}
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "0F"}, "freq": 5,
   "signals": [
@@ -38,27 +38,27 @@
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "21"}, "freq": 60,
   "signals": [
-    {"id": "MIL_DIST", "path": "Diagnostics", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled with MIL on"}
+    {"id": "MIL_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled with MIL on"}
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "23"}, "freq": 1,
   "signals": [
-    {"id": "FRP", "path": "Engine", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kilopascals" }, "name": "Fuel rail gauge pressure (diesel)"}
+    {"id": "FRP", "path": "Engine", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "Fuel rail gauge pressure (diesel)"}
   ]},
 { "hdr": "DB33", "cmd": {"01": "2F"}, "freq": 30,
   "signals": [
-    {"id": "FLI", "path": "Vehicle", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel tank level input"}
+    {"id": "FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel tank level input"}
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "30"}, "freq": 86400,
   "signals": [
-    {"id": "WARM_UPS", "path": "Diagnostics", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Warm-ups since codes cleared"}
+    {"id": "WARM_UPS", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Warm-ups since codes cleared"}
   ]},
 { "hdr": "DB33", "cmd": {"01": "31"}, "freq": 60,
   "signals": [
-    {"id": "CLR_DIST", "path": "Diagnostics", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled since codes cleared"}
+    {"id": "CLR_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled since codes cleared"}
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "33"}, "freq": 60,
   "signals": [
-    {"id": "BARO", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascals" }, "name": "Barometric pressure"}
+    {"id": "BARO", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure"}
   ]},
 { "hdr": "DB33", "cmd": {"01": "34"}, "freq": 2,
   "signals": [
@@ -67,7 +67,7 @@
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "42"}, "freq": 30,
   "signals": [
-    {"id": "VPWR", "path": "Vehicle", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Control module voltage"}
+    {"id": "VPWR", "path": "Electrical", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Control module voltage"}
   ]},
 { "hdr": "DB33", "dbg": true, "cmd": {"01": "45"}, "freq": 1,
   "signals": [
@@ -93,7 +93,7 @@
 
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1000"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_RPM_ECU", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "revolutionsPerMinute" }, "name": "Engine RPM (ECU direct)"}
+    {"id": "RENEGADE_RPM_ECU", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Engine RPM (ECU direct)"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1002"}, "freq": 30, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -105,7 +105,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1009"}, "freq": 3600, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_WATER_FUEL_DIST", "path": "Diagnostics", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance with water in fuel warning"}
+    {"id": "RENEGADE_WATER_FUEL_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance with water in fuel warning"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1900"}, "freq": 5, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -117,7 +117,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "195A"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 3, "min": -1, "add": -32.768, "div": 1000, "unit": "bar" }, "name": "Turbo boost pressure"}
+    {"id": "RENEGADE_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 3, "min": -1, "add": -32.768, "div": 1000, "unit": "bars" }, "name": "Turbo boost pressure"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "189F"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -129,11 +129,11 @@
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1947"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_RAIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 3000, "div": 20, "unit": "bar" }, "name": "Fuel rail pressure measured"}
+    {"id": "RENEGADE_RAIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 3000, "div": 20, "unit": "bars" }, "name": "Fuel rail pressure measured"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1946"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_RAIL_PRESS_CMD", "path": "Engine", "fmt": { "len": 16, "max": 3000, "div": 20, "unit": "bar" }, "name": "Fuel rail pressure commanded"}
+    {"id": "RENEGADE_RAIL_PRESS_CMD", "path": "Engine", "fmt": { "len": 16, "max": 3000, "div": 20, "unit": "bars" }, "name": "Fuel rail pressure commanded"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "3800"}, "freq": 2, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -165,11 +165,11 @@
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1955"}, "freq": 30, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_BATT_V_ECU", "path": "Vehicle", "fmt": { "len": 16, "max": 20, "mul": 5, "div": 10000, "unit": "volts" }, "name": "Battery voltage (ECU)"}
+    {"id": "RENEGADE_BATT_V_ECU", "path": "Battery", "fmt": { "len": 16, "max": 20, "mul": 5, "div": 10000, "unit": "volts" }, "name": "Battery voltage (ECU)"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "190B"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_VSS_ECU", "path": "Vehicle", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Vehicle speed (ECM)"}
+    {"id": "RENEGADE_VSS_ECU", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Vehicle speed (ECM)"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "192D"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -177,7 +177,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "18E2"}, "freq": 5, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "len": 16, "max": 500, "min": -500, "add": -32768, "unit": "millibar" }, "name": "DPF differential pressure"}
+    {"id": "RENEGADE_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "len": 16, "max": 50, "min": -50, "add": -32768, "div": 10, "unit": "kilopascal" }, "name": "DPF differential pressure"}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "3915"}, "freq": 5, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -262,8 +262,8 @@
 
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "051A"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_GEAR_DESIRED", "path": "Transmission", "fmt": { "len": 4, "max": 9, "unit": "scalar" }, "name": "Desired gear"},
-    {"id": "RENEGADE_GEAR_CURRENT", "path": "Transmission", "fmt": {"bix": 4, "len": 4, "max": 9, "unit": "scalar" }, "name": "Current gear"}
+    {"id": "JEEP_GEAR_DESIRED", "path": "Transmission", "fmt": { "len": 4, "max": 15, "unit": "scalar" }, "name": "Desired gear"},
+    {"id": "JEEP_GEAR_CURRENT", "path": "Transmission", "fmt": {"bix": 4, "len": 4, "max": 15, "unit": "scalar" }, "name": "Current gear"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "04FE"}, "freq": 5, "dbgfilter": { "years": [2019] },
   "signals": [
@@ -275,36 +275,36 @@
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "fcm1": true, "cmd": {"22": "2024"}, "freq": 86400, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_TIRE_SIZE", "path": "Tires", "fmt": {"bix": 64, "len": 16, "max": 65535, "unit": "millimeters" }, "name": "Tire size"}
+    {"id": "JEEP_TIRE_SIZE", "path": "Tires", "fmt": {"bix": 64, "len": 16, "max": 65535, "unit": "millimeters" }, "name": "Tire size"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "F158"}, "freq": 86400, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_MODEL_YEAR", "path": "Details", "fmt": { "len": 8, "max": 225, "add": 2000, "unit": "scalar" }, "name": "Model year"}
+    {"id": "JEEP_MODEL_YEAR", "path": "Details", "fmt": { "len": 8, "max": 225, "add": 2000, "unit": "scalar" }, "name": "Model year"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2102"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_GEARBOX_RPM", "path": "Transmission", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "revolutionsPerMinute" }, "name": "Gearbox output speed"}
+    {"id": "RENEGADE_GEARBOX_RPM", "path": "Transmission", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Gearbox output speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2B1B"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_WSS_RR", "path": "Vehicle", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Wheel speed rear right"}
+    {"id": "RENEGADE_WSS_RR", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Wheel speed rear right"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2B1C"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_WSS_RL", "path": "Vehicle", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Wheel speed rear left"}
+    {"id": "RENEGADE_WSS_RL", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Wheel speed rear left"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2B1D"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_WSS_FR", "path": "Vehicle", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Wheel speed front right"}
+    {"id": "RENEGADE_WSS_FR", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Wheel speed front right"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2B1E"}, "freq": 1, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_WSS_FL", "path": "Vehicle", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Wheel speed front left"}
+    {"id": "RENEGADE_WSS_FL", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Wheel speed front left"}
   ]},
 
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "1004"}, "freq": 30, "dbgfilter": { "years": [2019] },
   "signals": [
-    {"id": "RENEGADE_BATT_V_BCM", "path": "Vehicle", "fmt": { "len": 8, "max": 25, "div": 10, "unit": "volts" }, "name": "Battery voltage (BCM)"}
+    {"id": "RENEGADE_BATT_V_BCM", "path": "Battery", "fmt": { "len": 8, "max": 25, "div": 10, "unit": "volts" }, "name": "Battery voltage (BCM)"}
   ]}
 ]
 }
