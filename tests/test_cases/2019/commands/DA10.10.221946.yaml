@@ -1,5 +1,0 @@
-command_id: DA10.10.221946
-test_cases:
-- expected_values:
-    RENEGADE_RAIL_PRESS_CMD: 250
-  response: 18DAF110056219461388

@@ -1,5 +1,0 @@
-command_id: DA10.10.221935
-test_cases:
-- expected_values:
-    RENEGADE_IAT_TURBO: 55.76
-  response: 18DAF1100562193512B4

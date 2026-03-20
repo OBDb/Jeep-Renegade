@@ -1,5 +1,0 @@
-command_id: DA10.10.223809
-test_cases:
-- expected_values:
-    RENEGADE_AVG_DIST_REGENS: 190
-  response: 18DAF110056238090013

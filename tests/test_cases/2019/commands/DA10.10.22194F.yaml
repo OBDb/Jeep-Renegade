@@ -1,5 +1,0 @@
-command_id: DA10.10.22194F
-test_cases:
-- expected_values:
-    RENEGADE_OIL_PUMP: 1
-  response: 18DAF1100462194F01

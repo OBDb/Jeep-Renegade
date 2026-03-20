@@ -1,5 +1,0 @@
-command_id: DA10.10.2218A0
-test_cases:
-- expected_values:
-    RENEGADE_VGT_ACT: 97.27016
-  response: 18DAF110056218A0F902

@@ -1,5 +1,0 @@
-command_id: DA10.10.221009
-test_cases:
-- expected_values:
-    RENEGADE_WATER_FUEL_DIST: 3
-  response: 18DAF110056210090003

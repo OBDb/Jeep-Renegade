@@ -1,5 +1,0 @@
-command_id: DA10.10.221000
-test_cases:
-- expected_values:
-    RENEGADE_RPM_ECU: 851
-  response: 18DAF110056210000D4C

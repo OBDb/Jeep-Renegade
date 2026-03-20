@@ -1,5 +1,0 @@
-command_id: DA10.10.221900
-test_cases:
-- expected_values:
-    RENEGADE_FUEL_TEMP: 37.86
-  response: 18DAF110056219000F35

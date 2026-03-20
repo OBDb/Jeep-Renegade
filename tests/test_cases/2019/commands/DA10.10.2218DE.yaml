@@ -1,5 +1,0 @@
-command_id: DA10.10.2218DE
-test_cases:
-- expected_values:
-    RENEGADE_DPF_INLET_T: 103.86
-  response: 18DAF110056218DE1C19

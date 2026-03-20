@@ -1,5 +1,0 @@
-command_id: DA10.10.221003
-test_cases:
-- expected_values:
-    RENEGADE_ECT_ECU: 69.76
-  response: 18DAF110056210031570

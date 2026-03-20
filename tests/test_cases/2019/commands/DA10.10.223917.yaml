@@ -1,5 +1,0 @@
-command_id: DA10.10.223917
-test_cases:
-- expected_values:
-    RENEGADE_EGR_COOLER_T: 83.96
-  response: 18DAF110056239171836

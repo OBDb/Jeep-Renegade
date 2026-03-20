@@ -5,14 +5,16 @@ test_cases:
     JEEP_GEAR_DESIRED: 2
   response: '18 DA F1 18 04 62 05 1A 22 '
 - expected_values:
-    JEEP_GEAR_DESIRED: 0
     JEEP_GEAR_CURRENT: 0
+    JEEP_GEAR_DESIRED: 0
   response: 18DAF1180462051A00
 - expected_values:
-    JEEP_GEAR_DESIRED: 14
     JEEP_GEAR_CURRENT: 14
+    JEEP_GEAR_DESIRED: 14
   response: 18DAF1180462051AEE
 - expected_values:
-    JEEP_GEAR_DESIRED: 13
     JEEP_GEAR_CURRENT: 13
-  response: 18DAF1180462051ADD
+    JEEP_GEAR_DESIRED: 13
+  response: |-
+    22051A
+    18DAF1180462051ADD
