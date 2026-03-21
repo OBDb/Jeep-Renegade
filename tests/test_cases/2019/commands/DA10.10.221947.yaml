@@ -1,6 +1,9 @@
 command_id: DA10.10.221947
 test_cases:
 - expected_values:
+    RENEGADE_RAIL_PRESS: 346.2
+  response: 18DAF110056219471B0C
+- expected_values:
     RENEGADE_RAIL_PRESS: 348.6
   response: 18DAF110056219471B3C
 - expected_values:

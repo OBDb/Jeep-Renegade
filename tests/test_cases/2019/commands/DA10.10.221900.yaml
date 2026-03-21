@@ -13,8 +13,14 @@ test_cases:
     RENEGADE_FUEL_TEMP: 39.16
   response: 18DAF110056219000F76
 - expected_values:
+    RENEGADE_FUEL_TEMP: 40.36
+  response: 18DAF110056219000FB2
+- expected_values:
     RENEGADE_FUEL_TEMP: 42.26
   response: 18DAF110056219001011
+- expected_values:
+    RENEGADE_FUEL_TEMP: 42.66
+  response: 18DAF110056219001025
 - expected_values:
     RENEGADE_FUEL_TEMP: 42.76
   response: 18DAF11005621900102A
