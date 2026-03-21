@@ -1,0 +1,11 @@
+command_id: DA10.10.22192D
+test_cases:
+- expected_values:
+    RENEGADE_GEAR_ECU: 2
+  response: 18DAF1100462192D02
+- expected_values:
+    RENEGADE_GEAR_ECU: 3
+  response: 18DAF1100462192D03
+- expected_values:
+    RENEGADE_GEAR_ECU: 6
+  response: 18DAF1100462192D06

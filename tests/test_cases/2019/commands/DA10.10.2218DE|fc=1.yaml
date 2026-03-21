@@ -1,0 +1,11 @@
+command_id: DA10.10.2218DE|fc=1
+test_cases:
+- expected_values:
+    RENEGADE_DPF_INLET_T: 88.56
+  response: 18DAF110056218DE191C
+- expected_values:
+    RENEGADE_DPF_INLET_T: 215.76
+  response: 18DAF110056218DE31F4
+- expected_values:
+    RENEGADE_DPF_INLET_T: 267.26
+  response: 18DAF110056218DE3C03

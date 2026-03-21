@@ -1,0 +1,23 @@
+command_id: DA10.10.221947
+test_cases:
+- expected_values:
+    RENEGADE_RAIL_PRESS: 348.6
+  response: 18DAF110056219471B3C
+- expected_values:
+    RENEGADE_RAIL_PRESS: 363.3
+  response: 18DAF110056219471C62
+- expected_values:
+    RENEGADE_RAIL_PRESS: 380.4
+  response: 18DAF110056219471DB8
+- expected_values:
+    RENEGADE_RAIL_PRESS: 429.3
+  response: 18DAF11005621947218A
+- expected_values:
+    RENEGADE_RAIL_PRESS: 468.4
+  response: 18DAF110056219472498
+- expected_values:
+    RENEGADE_RAIL_PRESS: 632.1
+  response: 18DAF110056219473162
+- expected_values:
+    RENEGADE_RAIL_PRESS: 849.7
+  response: 18DAF110056219474262
