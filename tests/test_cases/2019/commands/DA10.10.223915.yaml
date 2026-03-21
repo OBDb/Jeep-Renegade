@@ -27,3 +27,6 @@ test_cases:
 - expected_values:
     RENEGADE_DPF_OUTLET_T: 210.46
   response: 18DAF1100562391530EB
+- expected_values:
+    RENEGADE_DPF_OUTLET_T: 343.36
+  response: 18DAF110056239154AE0

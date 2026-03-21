@@ -7,5 +7,8 @@ test_cases:
     RENEGADE_DPF_FLOW_RES: 0.1262
   response: 18DAF110056218E804EE
 - expected_values:
+    RENEGADE_DPF_FLOW_RES: 0.1451
+  response: 18DAF110056218E805AB
+- expected_values:
     RENEGADE_DPF_FLOW_RES: 0.1555
   response: 18DAF110056218E80613

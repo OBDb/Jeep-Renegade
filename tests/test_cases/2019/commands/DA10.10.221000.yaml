@@ -22,5 +22,11 @@ test_cases:
     RENEGADE_RPM_ECU: 1613.5
   response: 18DAF110056210001936
 - expected_values:
+    RENEGADE_RPM_ECU: 1708.5
+  response: 18DAF110056210001AB2
+- expected_values:
+    RENEGADE_RPM_ECU: 1946.5
+  response: 18DAF110056210001E6A
+- expected_values:
     RENEGADE_RPM_ECU: 2056
   response: 18DAF110056210002020

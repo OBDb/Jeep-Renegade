@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     RENEGADE_WATER_FUEL_DIST: 20
   response: 18DAF110056210090014
+- expected_values:
+    RENEGADE_WATER_FUEL_DIST: 260
+  response: 18DAF110056210090104
