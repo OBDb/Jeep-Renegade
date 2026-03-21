@@ -1,0 +1,17 @@
+command_id: DA10.10.22195A
+test_cases:
+- expected_values:
+    RENEGADE_BOOST: 0.938
+  response: 18DAF1100562195A83AA
+- expected_values:
+    RENEGADE_BOOST: 0.943
+  response: 18DAF1100562195A83AF
+- expected_values:
+    RENEGADE_BOOST: 0.976
+  response: 18DAF1100562195A83D0
+- expected_values:
+    RENEGADE_BOOST: 1.142
+  response: 18DAF1100562195A8476
+- expected_values:
+    RENEGADE_BOOST: 1.422
+  response: 18DAF1100562195A858E

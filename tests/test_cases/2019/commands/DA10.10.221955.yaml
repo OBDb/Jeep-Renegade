@@ -1,0 +1,8 @@
+command_id: DA10.10.221955
+test_cases:
+- expected_values:
+    RENEGADE_BATT_V_ECU: 14.24
+  response: 18DAF110056219556F40
+- expected_values:
+    RENEGADE_BATT_V_ECU: 14.28
+  response: 18DAF110056219556F90
