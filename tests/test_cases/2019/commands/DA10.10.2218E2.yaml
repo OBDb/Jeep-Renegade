@@ -18,3 +18,9 @@ test_cases:
 - expected_values:
     RENEGADE_DPF_DIFF_PRESS: 1.8
   response: 18DAF110056218E28012
+- expected_values:
+    RENEGADE_DPF_DIFF_PRESS: 3.4
+  response: 18DAF110056218E28022
+- expected_values:
+    RENEGADE_DPF_DIFF_PRESS: 4.7
+  response: 18DAF110056218E2802F

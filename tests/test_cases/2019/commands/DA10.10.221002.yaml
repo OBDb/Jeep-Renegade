@@ -21,3 +21,6 @@ test_cases:
 - expected_values:
     RENEGADE_ENGINE_STATUS: 7273
   response: 18DAF110056210021C69
+- expected_values:
+    RENEGADE_ENGINE_STATUS: 12459
+  response: 18DAF1100562100230AB

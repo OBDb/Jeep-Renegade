@@ -4,11 +4,11 @@ test_cases:
     RENEGADE_TCM_TORQUE: -59
   response: 18DAF1180562101801B9
 - expected_values:
-    RENEGADE_TCM_TORQUE: 9
-  response: 18DAF1180562101801FD
-- expected_values:
     RENEGADE_TCM_TORQUE: 12
   response: 18DAF118056210180200
+- expected_values:
+    RENEGADE_TCM_TORQUE: 266
+  response: 18DAF1180562101802FE
 - expected_values:
     RENEGADE_TCM_TORQUE: 269
   response: 18DAF118056210180301
