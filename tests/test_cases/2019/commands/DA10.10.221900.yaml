@@ -1,0 +1,26 @@
+command_id: DA10.10.221900
+test_cases:
+- expected_values:
+    RENEGADE_FUEL_TEMP: 36.36
+  response: 18DAF110056219000EEA
+- expected_values:
+    RENEGADE_FUEL_TEMP: 36.86
+  response: 18DAF110056219000F03
+- expected_values:
+    RENEGADE_FUEL_TEMP: 36.96
+  response: 18DAF110056219000F08
+- expected_values:
+    RENEGADE_FUEL_TEMP: 39.16
+  response: 18DAF110056219000F76
+- expected_values:
+    RENEGADE_FUEL_TEMP: 42.26
+  response: 18DAF110056219001011
+- expected_values:
+    RENEGADE_FUEL_TEMP: 42.76
+  response: 18DAF11005621900102A
+- expected_values:
+    RENEGADE_FUEL_TEMP: 42.86
+  response: 18DAF11005621900102F
+- expected_values:
+    RENEGADE_FUEL_TEMP: 45.56
+  response: 18DAF1100562190010B6

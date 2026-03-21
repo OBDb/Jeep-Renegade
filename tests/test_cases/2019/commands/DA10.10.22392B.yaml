@@ -1,0 +1,5 @@
+command_id: DA10.10.22392B
+test_cases:
+- expected_values:
+    RENEGADE_NOX_LOAD_PCT: 99.99847
+  response: 18DAF1100562392BFFFE

@@ -1,0 +1,26 @@
+command_id: DA10.10.221000
+test_cases:
+- expected_values:
+    RENEGADE_RPM_ECU: 849
+  response: 18DAF110056210000D44
+- expected_values:
+    RENEGADE_RPM_ECU: 851.5
+  response: 18DAF110056210000D4E
+- expected_values:
+    RENEGADE_RPM_ECU: 852
+  response: 18DAF110056210000D50
+- expected_values:
+    RENEGADE_RPM_ECU: 854
+  response: 18DAF110056210000D58
+- expected_values:
+    RENEGADE_RPM_ECU: 1143.5
+  response: 18DAF1100562100011DE
+- expected_values:
+    RENEGADE_RPM_ECU: 1584.5
+  response: 18DAF1100562100018C2
+- expected_values:
+    RENEGADE_RPM_ECU: 1613.5
+  response: 18DAF110056210001936
+- expected_values:
+    RENEGADE_RPM_ECU: 2056
+  response: 18DAF110056210002020

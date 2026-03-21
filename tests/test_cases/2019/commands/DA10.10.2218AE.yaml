@@ -1,0 +1,11 @@
+command_id: DA10.10.2218AE
+test_cases:
+- expected_values:
+    RENEGADE_REGEN_CONSEC_INTERRUPTED: 20
+  response: 18DAF110046218AE14
+- expected_values:
+    RENEGADE_REGEN_CONSEC_INTERRUPTED: 22
+  response: 18DAF110046218AE16
+- expected_values:
+    RENEGADE_REGEN_CONSEC_INTERRUPTED: 30
+  response: 18DAF110046218AE1E
