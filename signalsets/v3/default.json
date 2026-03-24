@@ -49,7 +49,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18E2"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "len": 16, "max": 500, "min": -500, "add": -32768, "unit": "millibar" }, "name": "DPF differential pressure"}
+    {"id": "RENEGADE_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "len": 16, "max": 50, "min": -50, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "DPF differential pressure"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "fcm1": true, "cmd": {"22": "18E4"}, "freq": 30, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
@@ -105,7 +105,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "195A"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 3000, "min": -1000, "add": -32768, "unit": "millibar" }, "name": "Turbo boost pressure"}
+    {"id": "RENEGADE_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 300, "min": -100, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Turbo boost pressure"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "3800"}, "freq": 2, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
