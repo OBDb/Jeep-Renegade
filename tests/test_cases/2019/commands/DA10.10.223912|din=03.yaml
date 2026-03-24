@@ -1,0 +1,5 @@
+command_id: DA10.10.223912|din=03
+test_cases:
+- expected_values:
+    RENEGADE_REGEN_COMPLETED: 309
+  response: 18DAF110056239120135

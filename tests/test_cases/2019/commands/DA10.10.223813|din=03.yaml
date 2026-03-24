@@ -1,0 +1,5 @@
+command_id: DA10.10.223813|din=03
+test_cases:
+- expected_values:
+    RENEGADE_OIL_DEGRAD: 87.00084
+  response: 18DAF11005623813DEB8

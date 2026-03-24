@@ -1,0 +1,8 @@
+command_id: DA10.10.223800|din=03
+test_cases:
+- expected_values:
+    RENEGADE_FUEL_CORR_CYL1: 0.21
+  response: 18DAF110056238000015
+- expected_values:
+    RENEGADE_FUEL_CORR_CYL1: -0.65
+  response: 18DAF11005623800FFBF
