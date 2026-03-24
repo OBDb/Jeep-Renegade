@@ -1,0 +1,20 @@
+command_id: DA10.10.221935|din=03
+test_cases:
+- expected_values:
+    RENEGADE_IAT_TURBO: 39.06
+  response: 18DAF110056219350F71
+- expected_values:
+    RENEGADE_IAT_TURBO: 45.16
+  response: 18DAF1100562193510A2
+- expected_values:
+    RENEGADE_IAT_TURBO: 50.66
+  response: 18DAF1100562193511B5
+- expected_values:
+    RENEGADE_IAT_TURBO: 51.76
+  response: 18DAF1100562193511EC
+- expected_values:
+    RENEGADE_IAT_TURBO: 52.46
+  response: 18DAF11005621935120F
+- expected_values:
+    RENEGADE_IAT_TURBO: 57.86
+  response: 18DAF11005621935131D
