@@ -1,0 +1,26 @@
+command_id: DA10.10.22189B|din=03
+test_cases:
+- expected_values:
+    RENEGADE_SWIRL_CMD: -16.41
+  response: 18DAF1100562189B7997
+- expected_values:
+    RENEGADE_SWIRL_CMD: 6.14
+  response: 18DAF1100562189B8266
+- expected_values:
+    RENEGADE_SWIRL_CMD: 18.34
+  response: 18DAF1100562189B872A
+- expected_values:
+    RENEGADE_SWIRL_CMD: 19.5
+  response: 18DAF1100562189B879E
+- expected_values:
+    RENEGADE_SWIRL_CMD: 20.14
+  response: 18DAF1100562189B87DE
+- expected_values:
+    RENEGADE_SWIRL_CMD: 49.94
+  response: 18DAF1100562189B9382
+- expected_values:
+    RENEGADE_SWIRL_CMD: 65.98
+  response: 18DAF1100562189B99C6
+- expected_values:
+    RENEGADE_SWIRL_CMD: 100
+  response: 18DAF1100562189BC7FA
