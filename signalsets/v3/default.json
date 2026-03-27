@@ -190,19 +190,19 @@
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2B1B"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_WSS_RR", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+    {"id": "RENEGADE_WSS_RR", "path": "Movement", "fmt": { "len": 16, "max": 300, "div": 16, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2B1C"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_WSS_RL", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+    {"id": "RENEGADE_WSS_RL", "path": "Movement", "fmt": { "len": 16, "max": 300, "div": 16, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2B1D"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_WSS_FR", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+    {"id": "RENEGADE_WSS_FR", "path": "Movement", "fmt": { "len": 16, "max": 300, "div": 16, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2B1E"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_WSS_FL", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+    {"id": "RENEGADE_WSS_FL", "path": "Movement", "fmt": { "len": 16, "max": 300, "div": 16, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "F158"}, "freq": 86400, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2020], "from": 2022 },
   "signals": [
