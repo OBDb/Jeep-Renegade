@@ -1,6 +1,9 @@
 command_id: DA40.40.221004
 test_cases:
 - expected_values:
+    RENEGADE_BATT_V_BCM: 13.6
+  response: 18DAF1400462100488
+- expected_values:
     RENEGADE_BATT_V_BCM: 13.7
   response: 18DAF1400462100489
 - expected_values:
