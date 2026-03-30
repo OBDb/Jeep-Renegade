@@ -4,8 +4,9 @@ test_cases:
     RENEGADE_WSS_RL: 0
   response: 18DAF11805622B1C0000
 - expected_values:
-    RENEGADE_WSS_RL: 300
+    RENEGADE_WSS_RL: 95.9375
   response: 18DAF11805622B1C05FF
 - expected_values:
-    RENEGADE_WSS_RL: 300
+    RENEGADE_WSS_RL: 96.1875
   response: 18DAF11805622B1C0603
+
