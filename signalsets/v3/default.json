@@ -1,19 +1,7 @@
 { "commands": [
-{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1000"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2020 },
-  "signals": [
-    {"id": "RENEGADE_RPM_ECU", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Engine RPM (ECU direct)"}
-  ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1002"}, "freq": 30, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2021 },
   "signals": [
     {"id": "RENEGADE_ENGINE_STATUS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Engine operational status"}
-  ]},
-{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1003"}, "freq": 5, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2021 },
-  "signals": [
-    {"id": "RENEGADE_ECT_ECU", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Coolant temperature (ECU direct)"}
-  ]},
-{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1009"}, "freq": 3600, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2021 },
-  "signals": [
-    {"id": "RENEGADE_WATER_FUEL_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance with water in fuel warning"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "189B"}, "freq": 2, "dbgfilter": { "to": 2018, "from": 2021 },
   "signals": [
@@ -41,7 +29,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18D0"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_MPROP_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "M-Prop injection command"}
+    {"id": "RENEGADE_MPROP_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 3, "div": 1000, "unit": "percent" }, "name": "M-Prop injection command"}
   ]},
 { "hdr": "DA10", "rax": "10", "fcm1": true, "din": "03", "cmd": {"22": "18DE"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
@@ -65,15 +53,11 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18ED"}, "freq": 2, "dbgfilter": { "to": 2018, "from": 2021 },
   "signals": [
-    {"id": "RENEGADE_LAMBDA_DPF_DS", "path": "Emissions", "fmt": { "len": 16, "max": 25, "div": 512, "unit": "percent" }, "name": "Lambda downstream DPF O2 concentration"}
+    {"id": "RENEGADE_LAMBDA_DPF_DS", "path": "Emissions", "fmt": { "len": 16, "max": 65535, "div": 1000, "unit": "lambda" }, "name": "Lambda downstream DPF"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1900"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "RENEGADE_FUEL_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Diesel fuel temperature"}
-  ]},
-{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "190B"}, "freq": 0.25, "dbgfilter": { "to": 2018, "from": 2020 },
-  "signals": [
-    {"id": "RENEGADE_VSS_ECU", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Vehicle speed (ECM)", "suggestedMetric": "speed"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "192D"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2021 },
   "signals": [
@@ -98,10 +82,6 @@
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "194F"}, "freq": 30, "dbgfilter": { "to": 2018, "from": 2021 },
   "signals": [
     {"id": "RENEGADE_OIL_PUMP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Variable oil pump position"}
-  ]},
-{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1955"}, "freq": 30, "dbgfilter": { "to": 2018, "from": 2021 },
-  "signals": [
-    {"id": "RENEGADE_BATT_V_ECU", "path": "Battery", "fmt": { "len": 16, "max": 20, "div": 2000, "unit": "volts" }, "name": "Battery voltage"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "195A"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
@@ -151,10 +131,6 @@
   "signals": [
     {"id": "RENEGADE_REGEN_COMPLETED", "path": "Emissions", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Total DPF regenerations completed"}
   ]},
-{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "3914"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2020 },
-  "signals": [
-    {"id": "RENEGADE_CATALYST_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Catalyst inlet temperature"}
-  ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "3915"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "RENEGADE_DPF_OUTLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "DPF outlet temperature"}
@@ -180,33 +156,25 @@
   "signals": [
     {"id": "RENEGADE_TCM_TORQUE", "path": "Transmission", "fmt": { "len": 16, "max": 1000, "min": -500, "add": -500, "unit": "newtonMeters" }, "name": "TCM reported torque"}
   ]},
-{ "hdr": "DA18", "rax": "18", "fcm1": true, "cmd": {"22": "2024"}, "freq": 86400, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2020, 2022, 2023], "from": 2025 },
-  "signals": [
-    {"id": "JEEP_TIRE_SIZE", "path": "Tires", "fmt": {"bix": 64, "len": 16, "max": 65535, "unit": "millimeters" }, "name": "Tire size"}
-  ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2102"}, "freq": 1, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2020 },
   "signals": [
     {"id": "RENEGADE_GEARBOX_RPM", "path": "Transmission", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Gearbox output speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2B1B"}, "freq": 1, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_WSS_RR", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+    {"id": "RENEGADE_WSS_RR", "path": "Movement", "fmt": { "len": 16, "max": 300, "div": 16, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2B1C"}, "freq": 1, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_WSS_RL", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+    {"id": "RENEGADE_WSS_RL", "path": "Movement", "fmt": { "len": 16, "max": 300, "div": 16, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2B1D"}, "freq": 1, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_WSS_FR", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+    {"id": "RENEGADE_WSS_FR", "path": "Movement", "fmt": { "len": 16, "max": 300, "div": 16, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2B1E"}, "freq": 1, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_WSS_FL", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
-  ]},
-{ "hdr": "DA18", "rax": "18", "cmd": {"22": "F158"}, "freq": 86400, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2020], "from": 2022 },
-  "signals": [
-    {"id": "JEEP_MODEL_YEAR", "path": "Details", "fmt": { "len": 8, "max": 2225, "add": 2000, "unit": "scalar" }, "name": "Model year"}
+    {"id": "RENEGADE_WSS_FL", "path": "Movement", "fmt": { "len": 16, "max": 300, "div": 16, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
   ]},
 { "hdr": "DA40", "rax": "40", "cmd": {"22": "1004"}, "freq": 30, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2021 },
   "signals": [
@@ -217,5 +185,4 @@
     {"id": "RENEGADE_DPF_TEMP1", "path": "Emissions", "fmt": {"bix": 8,  "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF temperature bank 1 sensor 1"},
     {"id": "RENEGADE_DPF_TEMP2", "path": "Emissions", "fmt": {"bix": 24, "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF temperature bank 1 sensor 2"}
   ]}
-]
-}
+]}
