@@ -185,4 +185,5 @@
     {"id": "RENEGADE_DPF_TEMP1", "path": "Emissions", "fmt": {"bix": 8,  "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF temperature bank 1 sensor 1"},
     {"id": "RENEGADE_DPF_TEMP2", "path": "Emissions", "fmt": {"bix": 24, "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF temperature bank 1 sensor 2"}
   ]}
-]}
+]
+}
