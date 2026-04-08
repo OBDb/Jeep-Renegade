@@ -4,11 +4,11 @@ test_cases:
     RENEGADE_RAIL_PRESS: 6.5
   response: 18DAF110056219470082
 - expected_values:
+    RENEGADE_RAIL_PRESS: 292.4
+  response: 18DAF1100562194716D8
+- expected_values:
     RENEGADE_RAIL_PRESS: 346.2
   response: 18DAF110056219471B0C
-- expected_values:
-    RENEGADE_RAIL_PRESS: 380.4
-  response: 18DAF110056219471DB8
 - expected_values:
     RENEGADE_RAIL_PRESS: 849.7
   response: 18DAF110056219474262

@@ -7,5 +7,8 @@ test_cases:
     RENEGADE_BOOST: 100.4
   response: 18DAF1100562195A83EC
 - expected_values:
+    RENEGADE_BOOST: 102.5
+  response: 18DAF1100562195A8401
+- expected_values:
     RENEGADE_BOOST: 142.2
   response: 18DAF1100562195A858E

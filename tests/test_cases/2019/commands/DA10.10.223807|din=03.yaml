@@ -21,3 +21,6 @@ test_cases:
 - expected_values:
     RENEGADE_DIST_SINCE_REGEN: 139
   response: 18DAF1100662380700056E
+- expected_values:
+    RENEGADE_DIST_SINCE_REGEN: 140
+  response: 18DAF11006623807000578

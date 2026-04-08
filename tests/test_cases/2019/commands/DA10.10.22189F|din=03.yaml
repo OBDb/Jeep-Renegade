@@ -1,8 +1,17 @@
 command_id: DA10.10.22189F|din=03
 test_cases:
 - expected_values:
+    RENEGADE_VGT_CMD: 78.7335
+  response: 18DAF1100562189FC98E
+- expected_values:
     RENEGADE_VGT_CMD: 83.06706
   response: 18DAF1100562189FD4A6
+- expected_values:
+    RENEGADE_VGT_CMD: 85.52682
+  response: 18DAF1100562189FDAF2
+- expected_values:
+    RENEGADE_VGT_CMD: 86.25315
+  response: 18DAF1100562189FDCCE
 - expected_values:
     RENEGADE_VGT_CMD: 87.02831
   response: 18DAF1100562189FDECA

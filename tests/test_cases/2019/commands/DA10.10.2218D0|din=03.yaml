@@ -4,8 +4,8 @@ test_cases:
     RENEGADE_MPROP_CMD: 0
   response: 18DAF110056218D00000
 - expected_values:
-    RENEGADE_MPROP_CMD: 53.53
-  response: 18DAF110056218D014E9
+    RENEGADE_MPROP_CMD: 46.06
+  response: 18DAF110056218D011FE
 - expected_values:
     RENEGADE_MPROP_CMD: 100
   response: 18DAF110056218D02DE9
