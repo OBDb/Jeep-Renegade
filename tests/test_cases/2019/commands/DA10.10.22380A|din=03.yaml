@@ -1,5 +1,8 @@
 command_id: DA10.10.22380A|din=03
 test_cases:
 - expected_values:
+    RENEGADE_AVG_REGEN_DUR: 6.48333
+  response: 18DAF1100562380A0185
+- expected_values:
     RENEGADE_AVG_REGEN_DUR: 6.55
   response: 18DAF1100562380A0189

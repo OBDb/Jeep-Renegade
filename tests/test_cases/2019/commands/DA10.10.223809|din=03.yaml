@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     RENEGADE_AVG_DIST_REGENS: 10
   response: 18DAF110056238090001
+- expected_values:
+    RENEGADE_AVG_DIST_REGENS: 200
+  response: 18DAF110056238090014

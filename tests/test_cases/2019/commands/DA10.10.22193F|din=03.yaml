@@ -4,26 +4,11 @@ test_cases:
     RENEGADE_MAF_TEMP: 28.46
   response: 18DAF1100562193F0D5F
 - expected_values:
-    RENEGADE_MAF_TEMP: 30.46
-  response: 18DAF1100562193F0DC3
-- expected_values:
     RENEGADE_MAF_TEMP: 31.86
   response: 18DAF1100562193F0E09
 - expected_values:
-    RENEGADE_MAF_TEMP: 35.66
-  response: 18DAF1100562193F0EC7
+    RENEGADE_MAF_TEMP: 46.36
+  response: 18DAF1100562193F10DE
 - expected_values:
-    RENEGADE_MAF_TEMP: 39.26
-  response: 18DAF1100562193F0F7B
-- expected_values:
-    RENEGADE_MAF_TEMP: 43.96
-  response: 18DAF1100562193F1066
-- expected_values:
-    RENEGADE_MAF_TEMP: 47.26
-  response: 18DAF1100562193F110B
-- expected_values:
-    RENEGADE_MAF_TEMP: 47.76
-  response: 18DAF1100562193F1124
-- expected_values:
-    RENEGADE_MAF_TEMP: 48.66
-  response: 18DAF1100562193F1151
+    RENEGADE_MAF_TEMP: 53.66
+  response: 18DAF1100562193F124B
