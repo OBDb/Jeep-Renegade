@@ -10,6 +10,9 @@ test_cases:
     RENEGADE_GEAR_ECU: 3
   response: 18DAF1100462192D03
 - expected_values:
+    RENEGADE_GEAR_ECU: 5
+  response: 18DAF1100462192D05
+- expected_values:
     RENEGADE_GEAR_ECU: 6
   response: 18DAF1100462192D06
 - expected_values:
