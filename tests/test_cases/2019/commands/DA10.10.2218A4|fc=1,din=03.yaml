@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     RENEGADE_REGEN_TOTAL: 375
   response: 18DAF110056218A40177
+- expected_values:
+    RENEGADE_REGEN_TOTAL: 380
+  response: 18DAF110056218A4017C

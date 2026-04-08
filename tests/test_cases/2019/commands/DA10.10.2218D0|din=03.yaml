@@ -1,11 +1,8 @@
 command_id: DA10.10.2218D0|din=03
 test_cases:
 - expected_values:
-    RENEGADE_MPROP_CMD: 19.13
-  response: 18DAF110056218D00779
-- expected_values:
-    RENEGADE_MPROP_CMD: 48.86
-  response: 18DAF110056218D01316
+    RENEGADE_MPROP_CMD: 0
+  response: 18DAF110056218D00000
 - expected_values:
     RENEGADE_MPROP_CMD: 53.53
   response: 18DAF110056218D014E9
