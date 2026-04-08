@@ -13,6 +13,12 @@ test_cases:
     RENEGADE_VGT_ACT: 97.18471
   response: 18DAF110056218A0F8CA
 - expected_values:
+    RENEGADE_VGT_ACT: 97.25185
+  response: 18DAF110056218A0F8F6
+- expected_values:
+    RENEGADE_VGT_ACT: 97.27016
+  response: 18DAF110056218A0F902
+- expected_values:
     RENEGADE_VGT_ACT: 97.51431
   response: 18DAF110056218A0F9A2
 - expected_values:
