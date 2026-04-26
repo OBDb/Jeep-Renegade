@@ -212,7 +212,7 @@
   "signals": [
     {"id": "RENEGADE_BATT_V_BCM", "path": "Battery", "fmt": { "len": 8, "max": 25, "div": 10, "unit": "volts" }, "name": "Battery voltage, BCM"}
   ]},
-{ "hdr": "DB33", "cmd": {"01": "7C"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2021 },
+{ "hdr": "DB33", "cmd": {"01": "7C"}, "freq": 5, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2021 },
   "signals": [
     {"id": "RENEGADE_DPF_TEMP1", "path": "Emissions", "fmt": {"bix": 8,  "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF temperature bank 1 sensor 1"},
     {"id": "RENEGADE_DPF_TEMP2", "path": "Emissions", "fmt": {"bix": 24, "len": 16, "max": 900, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "DPF temperature bank 1 sensor 2"}
