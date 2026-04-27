@@ -3,3 +3,24 @@ test_cases:
 - expected_values:
     RENEGADE_WSS_FR: 0
   response: 18DAF11805622B1D0000
+- expected_values:
+    RENEGADE_WSS_FR: 16
+  response: 18DAF11805622B1D0010
+- expected_values:
+    RENEGADE_WSS_FR: 297
+  response: 18DAF11805622B1D0129
+- expected_values:
+    RENEGADE_WSS_FR: 300
+  response: 18DAF11805622B1D0436
+- expected_values:
+    RENEGADE_WSS_FR: 300
+  response: 18DAF11805622B1D0478
+- expected_values:
+    RENEGADE_WSS_FR: 300
+  response: 18DAF11805622B1D049D
+- expected_values:
+    RENEGADE_WSS_FR: 300
+  response: 18DAF11805622B1D04CA
+- expected_values:
+    RENEGADE_WSS_FR: 300
+  response: 18DAF11805622B1D04FC

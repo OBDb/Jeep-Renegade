@@ -1,6 +1,30 @@
 command_id: DA18.18.22051A
 test_cases:
 - expected_values:
+    JEEP_GEAR_CURRENT: 1
+    JEEP_GEAR_DESIRED: 1
+  response: 18DAF1180462051A11
+- expected_values:
+    JEEP_GEAR_CURRENT: 3
+    JEEP_GEAR_DESIRED: 3
+  response: 18DAF1180462051A33
+- expected_values:
+    JEEP_GEAR_CURRENT: 4
+    JEEP_GEAR_DESIRED: 4
+  response: 18DAF1180462051A44
+- expected_values:
+    JEEP_GEAR_CURRENT: 6
+    JEEP_GEAR_DESIRED: 6
+  response: 18DAF1180462051A66
+- expected_values:
+    JEEP_GEAR_CURRENT: 7
+    JEEP_GEAR_DESIRED: 7
+  response: 18DAF1180462051A77
+- expected_values:
     JEEP_GEAR_CURRENT: 13
     JEEP_GEAR_DESIRED: 13
   response: 18DAF1180462051ADD
+- expected_values:
+    JEEP_GEAR_CURRENT: 14
+    JEEP_GEAR_DESIRED: 14
+  response: 18DAF1180462051AEE

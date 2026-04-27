@@ -6,3 +6,27 @@ test_cases:
 - expected_values:
     RENEGADE_TCM_TORQUE: 0
   response: 18DAF1180562101801F4
+- expected_values:
+    RENEGADE_TCM_TORQUE: 10
+  response: 18DAF1180562101801FE
+- expected_values:
+    RENEGADE_TCM_TORQUE: 13
+  response: 18DAF118056210180201
+- expected_values:
+    RENEGADE_TCM_TORQUE: 33
+  response: 18DAF118056210180215
+- expected_values:
+    RENEGADE_TCM_TORQUE: 70
+  response: 18DAF11805621018023A
+- expected_values:
+    RENEGADE_TCM_TORQUE: 110
+  response: 18DAF118056210180262
+- expected_values:
+    RENEGADE_TCM_TORQUE: 122
+  response: 18DAF11805621018026E
+- expected_values:
+    RENEGADE_TCM_TORQUE: 144
+  response: 18DAF118056210180284
+- expected_values:
+    RENEGADE_TCM_TORQUE: 161
+  response: 18DAF118056210180295
