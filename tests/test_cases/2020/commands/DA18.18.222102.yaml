@@ -1,11 +1,11 @@
 command_id: DA18.18.222102
 test_cases:
 - expected_values:
-    RENEGADE_GEARBOX_RPM: 732
-  response: 18DAF118056221020B70
-- expected_values:
-    RENEGADE_GEARBOX_RPM: 770
-  response: 18DAF118056221020C08
+    RENEGADE_GEARBOX_RPM: 0
+  response: 18DAF118056221020000
 - expected_values:
     RENEGADE_GEARBOX_RPM: 1023
   response: 18DAF118056221020FFC
+- expected_values:
+    RENEGADE_GEARBOX_RPM: 3016
+  response: 18DAF118056221022F20
