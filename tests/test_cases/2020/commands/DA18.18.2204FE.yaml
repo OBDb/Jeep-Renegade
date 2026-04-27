@@ -4,5 +4,5 @@ test_cases:
     JEEP_ATF_T_4THGEN: 13
   response: 18DAF118046204FE35
 - expected_values:
-    JEEP_ATF_T_4THGEN: 27
-  response: 18DAF118046204FE43
+    JEEP_ATF_T_4THGEN: 55
+  response: 18DAF118046204FE5F
