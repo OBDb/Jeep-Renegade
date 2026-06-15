@@ -4,14 +4,8 @@ test_cases:
     RENEGADE_DPF_SOOT_PCT: 41.04677
   response: 18DAF110056218E40A82
 - expected_values:
-    RENEGADE_DPF_SOOT_PCT: 41.12306
-  response: 18DAF110056218E40A87
-- expected_values:
-    RENEGADE_DPF_SOOT_PCT: 41.16884
-  response: 18DAF110056218E40A8A
-- expected_values:
-    RENEGADE_DPF_SOOT_PCT: 41.24514
-  response: 18DAF110056218E40A8F
-- expected_values:
     RENEGADE_DPF_SOOT_PCT: 41.32143
   response: 18DAF110056218E40A94
+- expected_values:
+    RENEGADE_DPF_SOOT_PCT: 43.86969
+  response: 18DAF110056218E40B3B
