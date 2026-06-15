@@ -15,3 +15,9 @@ test_cases:
 - expected_values:
     RENEGADE_ECT_ECU: 75.06
   response: 18DAF110056210031679
+- expected_values:
+    RENEGADE_ECT_ECU: 85.66
+  response: 18DAF11005621003188B
+- expected_values:
+    RENEGADE_ECT_ECU: 85.86
+  response: 18DAF110056210031895

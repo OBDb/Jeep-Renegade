@@ -6,3 +6,9 @@ test_cases:
 - expected_values:
     RENEGADE_DPF_INLET_T: 134.16
   response: 18DAF110056218DE2204
+- expected_values:
+    RENEGADE_DPF_INLET_T: 145.76
+  response: 18DAF110056218DE2448
+- expected_values:
+    RENEGADE_DPF_INLET_T: 148.06
+  response: 18DAF110056218DE24BB
