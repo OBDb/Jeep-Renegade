@@ -4,14 +4,11 @@ test_cases:
     RENEGADE_IAT_TURBO: 36.36
   response: 18DAF110056219350EEA
 - expected_values:
-    RENEGADE_IAT_TURBO: 36.46
-  response: 18DAF110056219350EEF
-- expected_values:
     RENEGADE_IAT_TURBO: 36.76
   response: 18DAF110056219350EFE
 - expected_values:
     RENEGADE_IAT_TURBO: 36.86
   response: 18DAF110056219350F03
 - expected_values:
-    RENEGADE_IAT_TURBO: 40.16
-  response: 18DAF110056219350FA8
+    RENEGADE_IAT_TURBO: 52.86
+  response: 18DAF110056219351223
