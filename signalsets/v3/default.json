@@ -1,7 +1,7 @@
 { "commands": [
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1000"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_RPM_ECU", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Engine RPM (ECU direct)"}
+    {"id": "RENEGADE_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Engine RPM"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1002"}, "freq": 30, "dbgfilter": { "to": 2014, "years": [2016, 2017], "from": 2021 },
   "signals": [
@@ -9,7 +9,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1003"}, "freq": 5, "dbgfilter": { "to": 2014, "years": [2016, 2017], "from": 2021 },
   "signals": [
-    {"id": "RENEGADE_ECT_ECU", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Coolant temperature (ECU direct)"}
+    {"id": "RENEGADE_ECT_ECU", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1009"}, "freq": 3600, "dbgfilter": { "to": 2014, "years": [2016, 2017], "from": 2021 },
   "signals": [
@@ -34,10 +34,6 @@
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18A5"}, "freq": 60, "dbgfilter": { "to": 2017, "from": 2021 },
   "signals": [
     {"id": "RENEGADE_REGEN_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "DPF regen interrupted count"}
-  ]},
-{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18AE"}, "freq": 3600, "dbgfilter": { "to": 2017, "from": 2021 },
-  "signals": [
-    {"id": "RENEGADE_REGEN_CONSEC_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Consecutive interrupted DPF regens"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18D0"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2020 },
   "signals": [
@@ -85,7 +81,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "193F"}, "freq": 5, "dbgfilter": { "to": 2017, "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_MAF_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "MAF sensor temperature"}
+    {"id": "RENEGADE_MAF_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Mass airflow sensor temperature"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1946"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2020 },
   "signals": [
@@ -167,14 +163,30 @@
   "signals": [
     {"id": "RENEGADE_NOX_LOAD_PCT", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "NOx storage catalyst load"}
   ]},
+{ "hdr": "DA18", "dbg": true, "cmd": {"22": "1D07"}, "freq": 1,
+  "signals": [
+    {"id": "RENEGADE_AT_OUTPUT_RPM", "path": "Transmission", "fmt": { "len": 8, "max": 6375, "mul": 25, "unit": "rpm" }, "name": "Transmission output speed"}
+  ]},
+{ "hdr": "DA18", "dbg": true, "cmd": {"22": "1D08"}, "freq": 1,
+  "signals": [
+    {"id": "RENEGADE_AT_INPUT_RPM", "path": "Transmission", "fmt": { "len": 8, "max": 6375, "mul": 25, "unit": "rpm" }, "name": "Transmission input speed"}
+  ]},
+{ "hdr": "DA18", "dbg": true, "cmd": {"22": "1D09"}, "freq": 1,
+  "signals": [
+    {"id": "RENEGADE_ATF_T", "path": "Transmission", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Automatic transmission temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "DA18", "dbg": true, "cmd": {"22": "1D12"}, "freq": 1,
+  "signals": [
+    {"id": "RENEGADE_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
+  ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "04FE"}, "freq": 5, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2021 },
   "signals": [
-    {"id": "JEEP_ATF_T_4THGEN", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
+    {"id": "RENEGADE_ATF_T_4THGEN", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "051A"}, "freq": 1, "dbgfilter": { "to": 2014, "years": [2016, 2017], "from": 2022 },
   "signals": [
-    {"id": "JEEP_GEAR_DESIRED", "path": "Transmission", "fmt": {          "len": 4, "max": 15, "unit": "scalar" }, "name": "Desired gear"},
-    {"id": "JEEP_GEAR_CURRENT", "path": "Transmission", "fmt": {"bix": 4, "len": 4, "max": 15, "unit": "scalar" }, "name": "Current gear"}
+    {"id": "RENEGADE_GEAR_DESIRED", "path": "Transmission", "fmt": {          "len": 4, "max": 15, "unit": "scalar" }, "name": "Desired gear"},
+    {"id": "RENEGADE_GEAR_CURRENT", "path": "Transmission", "fmt": {"bix": 4, "len": 4, "max": 15, "unit": "scalar" }, "name": "Current gear"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "1018"}, "freq": 2, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2021 },
   "signals": [
@@ -182,7 +194,7 @@
   ]},
 { "hdr": "DA18", "rax": "18", "fcm1": true, "cmd": {"22": "2024"}, "freq": 86400, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2022, 2023], "from": 2025 },
   "signals": [
-    {"id": "JEEP_TIRE_SIZE", "path": "Tires", "fmt": {"bix": 64, "len": 16, "max": 65535, "unit": "millimeters" }, "name": "Tire size"}
+    {"id": "RENEGADE_TIRE_SIZE", "path": "Tires", "fmt": {"bix": 64, "len": 16, "max": 65535, "unit": "millimeters" }, "name": "Tire size"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2102"}, "freq": 1, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2021 },
   "signals": [
@@ -206,7 +218,7 @@
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "F158"}, "freq": 86400, "dbgfilter": { "to": 2014, "years": [2016, 2017], "from": 2022 },
   "signals": [
-    {"id": "JEEP_MODEL_YEAR", "path": "Details", "fmt": { "len": 8, "max": 2225, "add": 2000, "unit": "scalar" }, "name": "Model year"}
+    {"id": "RENEGADE_MODEL_YEAR", "path": "Details", "fmt": { "len": 8, "max": 2225, "add": 2000, "unit": "scalar" }, "name": "Model year"}
   ]},
 { "hdr": "DA40", "rax": "40", "cmd": {"22": "1004"}, "freq": 30, "dbgfilter": { "to": 2014, "years": [2016, 2017], "from": 2021 },
   "signals": [
