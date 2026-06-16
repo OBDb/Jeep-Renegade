@@ -1,6 +1,9 @@
 command_id: DA10.10.221000|din=03
 test_cases:
 - expected_values:
+    RENEGADE_RPM_ECU: 818
+  response: 18DAF110056210000CC8
+- expected_values:
     RENEGADE_RPM_ECU: 818.5
   response: 18DAF110056210000CCA
 - expected_values:
