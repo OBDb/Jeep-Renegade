@@ -1,11 +1,8 @@
 command_id: DA10.10.221003|din=03
 test_cases:
 - expected_values:
-    RENEGADE_ECT_ECU: 69.96
-  response: 18DAF11005621003157A
-- expected_values:
-    RENEGADE_ECT_ECU: 72.06
-  response: 18DAF1100562100315E3
+    RENEGADE_ECT_ECU: 41.56
+  response: 18DAF110056210030FEE
 - expected_values:
     RENEGADE_ECT_ECU: 72.96
   response: 18DAF110056210031610
