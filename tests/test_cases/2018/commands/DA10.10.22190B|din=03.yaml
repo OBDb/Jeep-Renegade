@@ -3,3 +3,9 @@ test_cases:
 - expected_values:
     RENEGADE_VSS_ECU: 0
   response: 18DAF1100562190B0000
+- expected_values:
+    RENEGADE_VSS_ECU: 300
+  response: 18DAF1100562190B2F4E
+- expected_values:
+    RENEGADE_VSS_ECU: 300
+  response: 18DAF1100562190B413A
