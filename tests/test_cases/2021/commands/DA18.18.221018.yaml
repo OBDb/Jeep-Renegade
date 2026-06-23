@@ -1,0 +1,11 @@
+command_id: DA18.18.221018
+test_cases:
+- expected_values:
+    RENEGADE_TCM_TORQUE: -14
+  response: 18DAF1180562101801E6
+- expected_values:
+    RENEGADE_TCM_TORQUE: 9
+  response: 18DAF1180562101801FD
+- expected_values:
+    RENEGADE_TCM_TORQUE: 15
+  response: 18DAF118056210180203
