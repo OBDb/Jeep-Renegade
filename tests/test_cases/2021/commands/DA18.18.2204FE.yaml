@@ -1,8 +1,8 @@
 command_id: DA18.18.2204FE
 test_cases:
 - expected_values:
-    RENEGADE_ATF_T_4THGEN: 43
-  response: 18DAF118046204FE53
+    RENEGADE_ATF_T_4THGEN: 23
+  response: 18DAF118046204FE3F
 - expected_values:
     RENEGADE_ATF_T_4THGEN: 67
   response: 18DAF118046204FE6B
