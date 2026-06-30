@@ -1,6 +1,18 @@
 command_id: DB33.01A6
 test_cases:
 - expected_values:
+    ODO: 95548
+  response: '18 DA F1 10 06 41 A6 00 0E 94 58 '
+- expected_values:
+    ODO: 95552
+  response: '18 DA F1 10 06 41 A6 00 0E 94 80 '
+- expected_values:
+    ODO: 95555
+  response: '18 DA F1 10 06 41 A6 00 0E 94 9E '
+- expected_values:
+    ODO: 95556
+  response: '18 DA F1 10 06 41 A6 00 0E 94 A8 '
+- expected_values:
     ODO: 31170
   response: 18DAF1100641A60004C194
 - expected_values:
