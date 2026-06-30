@@ -4,8 +4,23 @@ test_cases:
     EQ_RAT: 1.00002
   response: '18 DA F1 10 04 41 44 80 00 '
 - expected_values:
+    EQ_RAT: 0.8585
+  response: 18DAF1100441446DE3
+- expected_values:
+    EQ_RAT: 0.87501
+  response: 18DAF1100441447000
+- expected_values:
+    EQ_RAT: 0.90822
+  response: 18DAF1100441447440
+- expected_values:
     EQ_RAT: 0.90889
   response: 18DAF1100441447456
+- expected_values:
+    EQ_RAT: 0.92824
+  response: 18DAF11004414476D0
+- expected_values:
+    EQ_RAT: 0.95421
+  response: 18DAF1100441447A23
 - expected_values:
     EQ_RAT: 1.00002
   response: 18DAF1100441448000
