@@ -10,8 +10,8 @@ test_cases:
     SHRTFT1: 0
   response: '18 DA F1 10 03 41 06 80 '
 - expected_values:
-    SHRTFT1: -22.65625
-  response: 18DAF11003410663
+    SHRTFT1: -28.125
+  response: 18DAF1100341065C
 - expected_values:
     SHRTFT1: 19.53125
   response: 18DAF11003410699
