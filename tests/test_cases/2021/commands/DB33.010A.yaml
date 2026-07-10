@@ -1,0 +1,8 @@
+command_id: DB33.010A
+test_cases:
+- expected_values:
+    FP: 546
+  response: 18DAF11003410AB6
+- expected_values:
+    FP: 555
+  response: 18DAF11003410AB9

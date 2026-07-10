@@ -1,0 +1,26 @@
+command_id: DB33.012C
+test_cases:
+- expected_values:
+    EGR_PCT: 0
+  response: 18DAF11003412C00
+- expected_values:
+    EGR_PCT: 6.27451
+  response: 18DAF11003412C10
+- expected_values:
+    EGR_PCT: 6.66667
+  response: 18DAF11003412C11
+- expected_values:
+    EGR_PCT: 8.62745
+  response: 18DAF11003412C16
+- expected_values:
+    EGR_PCT: 16.86275
+  response: 18DAF11003412C2B
+- expected_values:
+    EGR_PCT: 18.43137
+  response: 18DAF11003412C2F
+- expected_values:
+    EGR_PCT: 26.66667
+  response: 18DAF11003412C44
+- expected_values:
+    EGR_PCT: 53.72549
+  response: 18DAF11003412C89
