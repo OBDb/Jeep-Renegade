@@ -1,0 +1,11 @@
+command_id: DA10.10.2218ED|din=03
+test_cases:
+- expected_values:
+    RENEGADE_LAMBDA_DPF_DS: 0
+  response: 18DAF110056218ED0000
+- expected_values:
+    RENEGADE_LAMBDA_DPF_DS: 15.4375
+  response: 18DAF110056218ED1EE0
+- expected_values:
+    RENEGADE_LAMBDA_DPF_DS: 19.81836
+  response: 18DAF110056218ED27A3
