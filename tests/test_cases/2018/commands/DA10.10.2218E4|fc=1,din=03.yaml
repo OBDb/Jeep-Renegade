@@ -1,0 +1,11 @@
+command_id: DA10.10.2218E4|fc=1,din=03
+test_cases:
+- expected_values:
+    RENEGADE_DPF_SOOT_PCT: 41.04677
+  response: 18DAF110056218E40A82
+- expected_values:
+    RENEGADE_DPF_SOOT_PCT: 41.32143
+  response: 18DAF110056218E40A94
+- expected_values:
+    RENEGADE_DPF_SOOT_PCT: 43.86969
+  response: 18DAF110056218E40B3B

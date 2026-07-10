@@ -1,0 +1,18 @@
+command_id: DA18.18.22051A
+test_cases:
+- expected_values:
+    RENEGADE_GEAR_CURRENT: 2
+    RENEGADE_GEAR_DESIRED: 2
+  response: 18DAF1180462051A22
+- expected_values:
+    RENEGADE_GEAR_CURRENT: 3
+    RENEGADE_GEAR_DESIRED: 3
+  response: 18DAF1180462051A33
+- expected_values:
+    RENEGADE_GEAR_CURRENT: 4
+    RENEGADE_GEAR_DESIRED: 4
+  response: 18DAF1180462051A44
+- expected_values:
+    RENEGADE_GEAR_CURRENT: 13
+    RENEGADE_GEAR_DESIRED: 13
+  response: 18DAF1180462051ADD

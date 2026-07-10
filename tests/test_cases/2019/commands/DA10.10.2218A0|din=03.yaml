@@ -1,0 +1,14 @@
+command_id: DA10.10.2218A0|din=03
+test_cases:
+- expected_values:
+    RENEGADE_VGT_ACT: 80.28382
+  response: 18DAF110056218A0CD86
+- expected_values:
+    RENEGADE_VGT_ACT: 97.25185
+  response: 18DAF110056218A0F8F6
+- expected_values:
+    RENEGADE_VGT_ACT: 97.27016
+  response: 18DAF110056218A0F902
+- expected_values:
+    RENEGADE_VGT_ACT: 97.6791
+  response: 18DAF110056218A0FA0E

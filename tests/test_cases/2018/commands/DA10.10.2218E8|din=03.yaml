@@ -1,0 +1,8 @@
+command_id: DA10.10.2218E8|din=03
+test_cases:
+- expected_values:
+    RENEGADE_DPF_FLOW_RES: 0.2263
+  response: 18DAF110056218E808D7
+- expected_values:
+    RENEGADE_DPF_FLOW_RES: 0.2817
+  response: 18DAF110056218E80B01

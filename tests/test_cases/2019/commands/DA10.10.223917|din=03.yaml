@@ -1,0 +1,14 @@
+command_id: DA10.10.223917|din=03
+test_cases:
+- expected_values:
+    RENEGADE_EGR_COOLER_T: 64.26
+  response: 18DAF11005623917145D
+- expected_values:
+    RENEGADE_EGR_COOLER_T: 83.06
+  response: 18DAF110056239171809
+- expected_values:
+    RENEGADE_EGR_COOLER_T: 102.66
+  response: 18DAF110056239171BDD
+- expected_values:
+    RENEGADE_EGR_COOLER_T: 120.56
+  response: 18DAF110056239171F5C

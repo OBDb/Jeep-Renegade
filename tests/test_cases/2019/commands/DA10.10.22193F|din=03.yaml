@@ -1,0 +1,14 @@
+command_id: DA10.10.22193F|din=03
+test_cases:
+- expected_values:
+    RENEGADE_MAF_TEMP: 28.46
+  response: 18DAF1100562193F0D5F
+- expected_values:
+    RENEGADE_MAF_TEMP: 31.86
+  response: 18DAF1100562193F0E09
+- expected_values:
+    RENEGADE_MAF_TEMP: 46.36
+  response: 18DAF1100562193F10DE
+- expected_values:
+    RENEGADE_MAF_TEMP: 53.66
+  response: 18DAF1100562193F124B
