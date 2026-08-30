@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     RENEGADE_REGEN_COMPLETED: 302
   response: 18DAF11005623912012E
+- expected_values:
+    RENEGADE_REGEN_COMPLETED: 441
+  response: 18DAF1100562391201B9
