@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     RENEGADE_AVG_REGEN_TEMP: 622.56
   response: 18DAF110056238088168
+- expected_values:
+    RENEGADE_AVG_REGEN_TEMP: 625.66
+  response: 18DAF110056238088203

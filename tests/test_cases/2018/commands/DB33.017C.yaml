@@ -1,6 +1,12 @@
 command_id: DB33.017C
 test_cases:
 - expected_values:
+    RENEGADE_DPF_TEMP1: 90.8
+    RENEGADE_DPF_TEMP2: 49.7
+  response: |-
+    18DAF110100B417C03051C03
+    18DAF1102181000000000000
+- expected_values:
     RENEGADE_DPF_TEMP1: 131.7
     RENEGADE_DPF_TEMP2: 120.2
   response: |-

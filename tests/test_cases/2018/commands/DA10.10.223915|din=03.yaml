@@ -1,8 +1,8 @@
 command_id: DA10.10.223915|din=03
 test_cases:
 - expected_values:
-    RENEGADE_DPF_OUTLET_T: 120.16
-  response: 18DAF110056239151F48
+    RENEGADE_DPF_OUTLET_T: 47.66
+  response: 18DAF11005623915111F
 - expected_values:
     RENEGADE_DPF_OUTLET_T: 134.06
   response: 18DAF1100562391521FF
