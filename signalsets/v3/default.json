@@ -1,4 +1,8 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "DA10", "type": "engine" },
+    { "hdr": "DA18", "type": "transmission" }
+  ],
+  "commands": [
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1000"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2020 },
   "signals": [
     {"id": "RENEGADE_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Engine RPM"}
