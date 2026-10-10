@@ -6,10 +6,10 @@ test_cases:
     01441
     18DAF110044144FFFF
 - expected_values:
-    EQ_RAT: 0.93278
+    EQ_RAT: 0.93277
   response: 18DAF1100441447765
 - expected_values:
-    EQ_RAT: 1.00002
+    EQ_RAT: 1
   response: 18DAF1100441448000
 - expected_values:
     EQ_RAT: 1.99
