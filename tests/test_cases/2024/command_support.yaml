@@ -40,6 +40,7 @@ supported_commands_by_ecu:
   - 014C:TAC_PCT
   - 014F:MAX_EQ_RAT,MAX_MAP,MAX_O2_CURR,MAX_O2_VOLT
   - 0151:FUEL_TYP
+  - 0152:ALCH_PCT
   - 015E:FUEL_RATE
   - 0162:TQ_ACT
   - 0163:TQ_REF
@@ -50,7 +51,10 @@ supported_commands_by_ecu:
   - DB33.012F:FLI
   - DB33.0131:CLR_DIST
   - DB33.0134:LAMBDA11_CURRENT,O2S11_CURRENT
+  - DB33.0142:VPWR
   - DB33.0144:EQ_RAT
+  - DB33.0146:AAT
+  - DB33.0152:ALCH_PCT
   - DB33.015E:FUEL_RATE
   - DB33.01A6:ODO
 unsupported_commands_by_ecu:

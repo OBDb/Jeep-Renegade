@@ -24,10 +24,10 @@ test_cases:
     18DAF11004410C1A00
     18DAF11804410C19DC
 - expected_values:
-    RPM: 2021
+    RPM: 2027
   response: |-
-    18DAF11004410C1F90
-    18DAF11804410C1F94
+    18DAF11004410C1FAC
+    18DAF11804410C1FAC
 - expected_values:
     RPM: 2081
   response: |-
