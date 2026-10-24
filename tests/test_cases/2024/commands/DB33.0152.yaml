@@ -1,0 +1,17 @@
+command_id: DB33.0152
+test_cases:
+- expected_values:
+    ALCH_PCT: 31.76471
+  response: 18DAF1100341525100A6B800
+- expected_values:
+    ALCH_PCT: 31.76471
+  response: 18DAF1100341525100A6CC00
+- expected_values:
+    ALCH_PCT: 31.76471
+  response: 18DAF1100341525100A81300
+- expected_values:
+    ALCH_PCT: 31.76471
+  response: 18DAF1100341525100A96000
+- expected_values:
+    ALCH_PCT: 31.76471
+  response: 18DAF11003415251E8A6C200
