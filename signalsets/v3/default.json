@@ -190,7 +190,7 @@
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "051A"}, "freq": 1, "dbgfilter": { "to": 2014, "years": [2016, 2017], "from": 2022 },
   "signals": [
     {"id": "RENEGADE_GEAR_DESIRED", "path": "Transmission", "fmt": {          "len": 4, "max": 15, "unit": "scalar" }, "name": "Desired gear"},
-    {"id": "RENEGADE_GEAR_CURRENT", "path": "Transmission", "fmt": {"bix": 4, "len": 4, "max": 15, "unit": "scalar" }, "name": "Current gear"}
+    {"id": "RENEGADE_GEAR_CURRENT", "path": "Transmission", "fmt": {"bix": 4, "len": 4, "max": 15, "unit": "scalar" }, "name": "Current gear", "suggestedMetric": "gear"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "1018"}, "freq": 2, "dbgfilter": { "to": 2014, "years": [2016, 2017], "from": 2022 },
   "signals": [
