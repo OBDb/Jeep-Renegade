@@ -105,7 +105,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "195A"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2020 },
   "signals": [
-    {"id": "RENEGADE_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 300, "min": -100, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Turbo boost pressure"}
+    {"id": "RENEGADE_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 300, "min": -100, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Turbo boost pressure", "suggestedMetric": "absoluteBoostPressure"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "3800"}, "freq": 2, "dbgfilter": { "to": 2017, "from": 2020 },
   "signals": [
