@@ -4,5 +4,5 @@ test_cases:
     RENEGADE_ATF_T_4THGEN: 43
   response: 18DAF118046204FE53
 - expected_values:
-    RENEGADE_ATF_T_4THGEN: 58
-  response: 18DAF118046204FE62
+    RENEGADE_ATF_T_4THGEN: 71
+  response: 18DAF118046204FE6F
