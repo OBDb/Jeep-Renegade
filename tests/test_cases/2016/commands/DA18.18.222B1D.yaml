@@ -8,4 +8,4 @@ test_cases:
   response: 18DAF11805622B1D00FD
 - expected_values:
     RENEGADE_WSS_FR: 300
-  response: 18DAF11805622B1D0307
+  response: 18DAF11805622B1D050B
